@@ -1,0 +1,200 @@
+.blogs {
+  position: relative;
+}
+
+.blogs .container {
+  padding: var(--spacing-7);
+}
+
+.blogs-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  padding-block-end: var(--spacing-5);
+  margin-block-end: var(--spacing-5);
+  border-bottom: 3px solid var(--bg-jet);
+}
+
+.blogs-header .elem .section-heading { padding-block-start: var(--spacing-3); }
+
+.blogs-header > a {
+  font-size: var(--fs-sm);
+  font-weight: var(--fw-semibold);
+  font-family: var(--fontFamily-hikasami);
+  color: var(--text-black);
+}
+
+.blogs .wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-6);
+}
+
+.blogs .wrapper .content-left .elem1 {
+  background: var(--bg-jet);
+  color: var(--text-white);
+  padding: var(--spacing-6);
+  border-radius: var(--radius-large);
+}
+
+.blogs .wrapper .content-left .elem1 .child1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  font-family: var(--fontFamily-mono);
+  padding-block-end: var(--spacing-2);
+  margin-block-end: var(--spacing-4);
+  border-bottom: 1px solid #ffffff54;
+}
+
+.blogs .wrapper .content-left .elem1 .child1 p {
+  font-size: 1.1rem;
+  color: #8a9ca7;
+  text-transform: uppercase;
+}
+
+.blogs .wrapper .content-left .elem1 .child2 {
+  margin-block-end: var(--spacing-3);
+  padding-block-end: var(--spacing-5);
+  border-bottom: 1px solid #ffffff54;
+}
+
+.blogs .wrapper .content-left .elem1 .child2 h2 {
+  font-size: var(--fs-3xl);
+  font-weight: var(--fw-semibold);
+  font-family: var(--fontFamily-hikasami);
+  text-transform: uppercase;
+  line-height: 1;
+}
+
+.blogs .wrapper .content-left .elem1 .child2 .line {
+  width: 100px;
+  height: 1px;
+  background-color: var(--bg-teal);
+  margin-block-start: var(--spacing-3);
+}
+
+.blogs .wrapper .content-left .elem1 .child3 div { margin-block-end: var(--spacing-2); }
+
+.blogs .wrapper .content-left .elem1 .child3 div p,
+.blogs .wrapper .content-left .elem1 .child3 > p {
+  font-size: 1rem;
+  font-family: var(--fontFamily-mono);
+  color: #8a9ca7;
+  text-transform: uppercase;
+}
+
+.blogs .wrapper .content-left .elem1 .child3 div h4 {
+  font-size: var(--fs-2xl);
+  font-weight: var(--fw-semibold);
+  font-family: var(--fontFamily-hikasami);
+}
+
+.blogs .wrapper .content-left .elem2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: var(--spacing-2);
+  padding-block: var(--spacing-3);
+  font-family: var(--fontFamily-hikasami);
+}
+
+.blogs .wrapper .content-left .elem2 .line {
+  flex: 1;
+  min-width: 0;
+  height: 1px;
+  background-color: #00000025;
+}
+
+.blogs .wrapper .content-left .elem2 .text {
+  font-size: var(--fs-xs);
+  text-transform: uppercase;
+  color: rgb(24, 92, 103);
+}
+
+.blogs .wrapper .content-left .elem2 .date-text { font-size: var(--fs-xs); }
+
+.blogs .wrapper .content-right .blog-item {
+  padding-block: var(--spacing-4);
+  padding-inline-end: var(--spacing-3);
+  border-bottom: 1px solid #00000033;
+}
+
+.blogs .wrapper .content-right .blog-item a {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--spacing-5);
+}
+
+.blogs .wrapper .content-right .blog-item a .num-text {
+  font-size: var(--fs-sm);
+  font-family: var(--fontFamily-mono);
+}
+
+.blogs .wrapper .content-right .blog-item a div h3 {
+  font-size: var(--fs-md);
+  font-weight: var(--fw-semibold);
+  font-family: var(--fontFamily-hikasami);
+  color: var(--text-black);
+}
+
+.blogs .wrapper .content-right .blog-item a div span {
+  font-size: var(--fs-xs);
+  font-family: var(--fontFamily-mono);
+  padding-block: var(--spacing-1);
+}
+
+.blogs .container .wrapper2 {
+  margin-block: var(--spacing-7);
+}
+
+.blogs .container .wrapper2 p {
+  font-size: var(--fs-md);
+  font-family: var(--fontFamily-sans);
+}
+
+
+
+
+@media (min-width: 675px) {
+  .blogs .container {
+    padding-inline: var(--spacing-10);
+  }
+
+  .blogs .wrapper {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .blogs .wrapper a,
+  .blogs .wrapper .content-right {
+    flex-basis: 50%;
+  }
+}
+
+
+
+@media (min-width: 765px) {
+  .blogs .wrapper {
+    gap: var(--spacing-10);
+  }
+
+  .blogs-header {
+    margin-block-end: var(--spacing-10);
+  }
+
+}
+
+
+@media (min-width: 850px) {
+  .blogs .container {
+    padding-inline: var(--spacing-14);
+  }
+
+  .blogs .wrapper {
+    gap: var(--spacing-14);
+  }
+}

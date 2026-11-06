@@ -1,0 +1,101 @@
+.unum-pay-paths {
+  position: relative;
+  padding: var(--spacing-5) var(--spacing-4);
+}
+
+.unum-pay-paths .container {
+  padding: var(--spacing-5);  
+  background: var(--bg-white);
+  border-radius: var(--radius-large);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-5);
+}
+
+.unum-pay-paths .container .hero-header {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-2);
+}
+
+.unum-pay-paths .container .wrapper {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: var(--spacing-3);
+}
+
+.unum-pay-paths .container .wrapper .content {
+  padding: var(--spacing-6);
+  border-radius: var(--radius-large);
+  background-color: var(--bg-light-gray);
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-4);
+}
+
+.unum-pay-paths .container .wrapper .content .subtitle {
+  font-size: var(--fs-xs);
+  font-weight: var(--fw-medium);
+  font-family: var(--fontFamily-mono);
+  color: #7949b5;
+  text-transform: uppercase;
+}
+
+.unum-pay-paths .container .wrapper .content .title {
+  font-size: var(--fs-3xl);
+  font-weight: var(--fw-semibold);
+  font-family: var(--fontFamily-hikasami);
+  line-height: 1.3;
+  color: var(--text-black);
+}
+
+.unum-pay-paths .container .wrapper .content .desc {
+  font-size: var(--fs-sm);
+  font-family: var(--fontFamily-sans);
+  line-height: 1.5;
+}
+
+.unum-pay-paths .container .wrapper .content .link {
+  font-size: var(--fs-md);
+  font-weight: var(--fw-medium);
+  font-family: var(--fontFamily-hikasami);
+  background: #6B3FA0;
+  color: var(--text-white);
+  width: fit-content;
+  padding: var(--spacing-2) var(--spacing-5);
+  border-radius: var(--radius-medium);
+  margin-block-start: var(--spacing-2);
+  transition: 0.2s ease;
+}
+
+.unum-pay-paths .container .wrapper .content .link:hover {
+  background: #8b5ac7;
+}
+
+
+@media (min-width: 545px) {
+  .unum-pay-paths .container {
+    padding: var(--spacing-8);
+  }
+}
+
+
+@media (min-width: 768px) {
+  .unum-pay-paths .container {
+    padding: var(--spacing-10);
+    gap: var(--spacing-7);
+  }
+
+  .unum-pay-paths .container .wrapper {
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--spacing-5);
+  }
+}
+
+
+@media (min-width: 1000px) {
+  .unum-pay-paths .container {
+    padding: var(--spacing-10) var(--spacing-15);
+  }
+}

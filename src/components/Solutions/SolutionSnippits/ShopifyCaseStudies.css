@@ -1,0 +1,144 @@
+.shopify-case-studies {
+  position: relative;
+}
+
+.shopify-case-studies .container {
+  padding: var(--spacing-5);
+}
+
+.shopify-case-studies .container .hero-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: var(--spacing-3);
+}
+
+.shopify-case-studies .container .hero-header div {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-2);
+}
+
+.shopify-case-studies .container .hero-header .btn {
+  box-shadow: none;
+  background-color: #9ec94d;
+}
+
+.shopify-case-studies .container .hero-header .btn:hover {
+  background-color: #b5dc6b;
+}
+
+.shopify-case-studies .container .list {
+  display: grid;
+  gap: var(--spacing-3);
+  margin-block-start: var(--spacing-3);
+}
+
+.shopify-case-studies .container .list .item {
+  background-color: var(--bg-jet);
+  color: var(--text-white);
+  border-radius: var(--radius-large);
+  overflow: hidden;
+}
+
+.shopify-case-studies .container .list .item .block-card {
+  position: relative;
+}
+
+.shopify-case-studies .container .list .item .block-card .overlay-text {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  font-size: 1rem;
+  font-family: var(--fontFamily-mono);
+  text-transform: uppercase;
+  padding: var(--spacing-1) var(--spacing-3);
+  background-color: #05131dec;
+  border-radius: var(--radius-full);
+}
+
+.shopify-case-studies .container .list .item .block-content {
+  padding: var(--spacing-3) var(--spacing-5);
+}
+
+.shopify-case-studies .container .list .item .block-content .child1 {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-2);
+}
+
+.shopify-case-studies .container .list .item .block-content .block-subtitle {
+  font-size: var(--fs-sm);
+  font-family: var(--fontFamily-sans);
+  color: #9ec94d;
+}
+
+.shopify-case-studies .container .list .item .block-content .block-title {
+  font-size: var(--fs-lg);
+  font-weight: var(--fw-semibold);
+  font-family: var(--fontFamily-hikasami);
+  line-height: 1.4;
+}
+
+.shopify-case-studies .container .list .item .block-content .block-desc {
+  font-size: var(--fs-xs);
+  font-family: var(--fontFamily-mono);
+  text-transform: uppercase;
+  color: #afbfc9;
+}
+
+.shopify-case-studies .container .list .item .block-content .child2 {
+  padding-block: var(--spacing-2);
+  margin-block-start: var(--spacing-3);
+  border-top: 1px solid #ffffff2b;
+}
+
+.shopify-case-studies .container .list .item .block-content .child2 .sub-child {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.shopify-case-studies .container .list .item .block-content .child2 .sub-child .tree .icon {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-1);
+  line-height: 1.3;
+  font-size: var(--fs-2xl);
+  font-family: var(--fontFamily-hikasami);
+  font-weight: var(--fw-semibold);
+  color: #9ec94d;
+}
+
+.shopify-case-studies .container .list .item .block-content .child2 .sub-child .tree .text {
+  font-size: var(--fs-sm);
+  font-family: var(--fontFamily-sans);
+  color: #afbfc9;
+}
+
+.shopify-case-studies .container .list .item .block-content .child2 .btn-case-study {
+  font-size: var(--fs-sm);
+  font-family: var(--fontFamily-mono);
+  margin-block-start: var(--spacing-5);
+}
+
+
+
+@media (min-width: 545px) {
+  .shopify-case-studies .container {
+    padding-inline: var(--spacing-8);
+  } 
+
+  .shopify-case-studies .container .list {
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  }
+}
+
+
+@media (min-width: 768px) {
+  .shopify-case-studies .container {
+    width: 95%;
+    margin-inline: auto;
+  } 
+}

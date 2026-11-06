@@ -1,0 +1,117 @@
+.salesforce {
+  position: relative;
+  min-height: 420px;
+  width: 100%;
+  padding: var(--spacing-4);
+}
+
+.salesforce .container {
+  width: 100%;
+  height: 100%;
+  background: #051824;
+  margin: 0 auto;
+  overflow: hidden;
+  isolation: isolate;
+  position: relative;
+  border-radius: 20px;
+}
+
+.salesforce__image {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 50%;
+  overflow: hidden;
+}
+
+.salesforce__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Fade effect: color se image mein blend */
+.salesforce__fade {
+  position: absolute;
+  inset: 0;
+  background: #051824;
+  -webkit-mask-image: linear-gradient(90deg, #000 0%, #000 58%, transparent 82%);
+  mask-image: linear-gradient(90deg, #000 0%, #000 58%, transparent 82%);
+}
+
+.salesforce__content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-4);
+  padding-block: var(--spacing-14);
+  max-width: 100%;
+  z-index: 2;
+}
+
+.salesforce__tag {
+  font-size: var(--fs-sm);
+  letter-spacing: 1px;
+  color: #38bdf8;
+  font-family: var(--fontFamily-mono);
+}
+
+.salesforce__title {
+  font-size: var(--fs-3xl);
+  font-family: var(--fontFamily-hikasami);
+  line-height: 1.2;
+  font-weight: var(--fw-semibold);
+  color: var(--text-white);
+}
+
+.salesforce__text {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: var(--fs-md);
+  line-height: 1.6;
+  font-family: var(--fontFamily-sans);
+}
+
+.salesforce .btn {
+  background: #1d8cff;
+  color: var(--text-black);
+  width: unset;
+}
+
+
+
+@media (min-width: 545px) {
+  .salesforce { min-height: 520px; }
+  .salesforce__content { padding: var(--spacing-14) var(--spacing-3); }
+
+  .salesforce .btn {
+    width: max-content;
+  }
+
+  .salesforce .salesforce__title {
+    font-size: var(--fs-4xl);
+  }
+}
+
+@media (min-width: 768px) {
+  .salesforce { min-height: 520px; }
+
+  .salesforce .salesforce__title {
+    font-size: var(--fs-5xl);
+    width: 600px;
+  }
+}
+
+/* Desktop: image + fade dikhao, text ko left 50% mein rakho */
+@media (min-width: 1024px) {
+  .salesforce__content {
+    width: 50%;
+    min-height: 520px;
+    justify-content: center;
+    padding-inline: var(--spacing-8);
+  }
+
+  .salesforce .salesforce__title {
+    font-size: var(--fs-8xl);
+  }
+}

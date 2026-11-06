@@ -1,0 +1,451 @@
+.microsoft-power-solutions {
+  padding-block: var(--spacing-5);
+}
+
+.microsoft-power-solutions .container { 
+  padding-inline: var(--spacing-5);
+}
+
+.microsoft-power-solutions .container .tab-content-btns {
+  margin-block-start: var(--spacing-5);
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-3);
+  overflow-x: auto;
+  overflow-y: hidden;
+  scroll-snap-type: x mandatory;
+  padding-block: var(--spacing-3);
+  scrollbar-width: none;
+}
+
+.microsoft-power-solutions .container .tab-content-btns::-webkit-scrollbar {
+  display: none;
+}
+
+.microsoft-power-solutions .container .tab-content-btns .tab-btn {
+  display: flex;
+  align-items: center;
+  text-wrap: nowrap;
+  gap: var(--spacing-2);
+  height: 46px;
+  padding-inline: var(--spacing-5);
+  font-size: var(--fs-sm);
+  font-weight: var(--fw-semibold);
+  font-family: var(--fontFamily-hikasami);
+  border-radius: var(--radius-full);
+  border: 1px solid #dcdcdc;
+  background: var(--bg-white);
+}
+
+.microsoft-power-solutions .container .tab-content-btns .tab-btn.active {
+  background-color: #1777CC;
+  border-color: #1777CC;
+  color: var(--text-white);
+}
+
+.microsoft-power-solutions .container .tab-content-btns .tab-btn .icon { display: flex; }
+
+.microsoft-power-solutions .container .tab-content-cards {
+  background-color: var(--bg-light-gray);
+  padding: var(--spacing-5);
+  border-radius: var(--radius-large);
+  margin-block-start: var(--spacing-5);
+}
+
+.microsoft-power-solutions .container .tab-content-cards .tab-content {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: var(--spacing-5);
+}
+
+.microsoft-power-solutions .container .tab-content-cards .tab-content .content-left .elem1 {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-3);
+}
+
+.microsoft-power-solutions .container .tab-content-cards .tab-content .content-left .elem1 .left-img {
+  width: 35px;
+  height: 35px;
+  border-radius: var(--radius-small);
+  display: grid;
+  place-items: center;
+}
+
+.microsoft-power-solutions .container .tab-content-cards .tab-content .content-left .elem1 .subtitle-text {
+  font-size: var(--fs-xs);
+  font-weight: var(--fw-medium);
+  font-family: var(--fontFamily-mono);
+  text-transform: uppercase;
+  line-height: 1.4;
+}
+
+.microsoft-power-solutions .container .tab-content-cards .tab-content .content-left .section-desc {
+  font-size: var(--fs-md);
+  font-family: var(--fontFamily-sans);
+  padding-block: var(--spacing-3);
+}
+
+.microsoft-power-solutions .container .tab-content-cards .tab-content .content-left .elem2 {
+  padding-block: var(--spacing-3);
+  border-top: 1px solid #e0e0e0;
+}
+
+.microsoft-power-solutions .container .tab-content-cards .tab-content .content-left .elem2 .query-title {
+  color: var(--text-black);
+  font-size: 1.3rem;
+  font-family: var(--fontFamily-mono);
+  text-transform: uppercase;
+  margin-block-end: var(--spacing-2);
+}
+
+.microsoft-power-solutions .container .tab-content-cards .tab-content .content-left .elem2 .query-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-1);
+}
+
+.microsoft-power-solutions .container .tab-content-cards .tab-content .content-left .elem2 .query-list .item {
+  font-size: var(--fs-sm);
+  font-family: var(--fontFamily-sans);
+  padding-inline-start: var(--spacing-4);
+  position: relative;
+}
+
+.microsoft-power-solutions .container .tab-content-cards .tab-content .content-left .elem2 .query-list .item::before {
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: 0;
+  width: 5px;
+  height: 5px;
+  border-radius: var(--radius-circle);
+}
+
+.microsoft-power-solutions .container .tab-content-cards .tab-content .content-right {
+  border: 1px solid #e1e1e1;
+  background-color: var(--bg-white);
+  border-radius: var(--radius-medium);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.microsoft-power-solutions .container .tab-content-cards .tab-content .content-right .elem1 {
+  padding: var(--spacing-3);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.microsoft-power-solutions .container .tab-content-cards .tab-content .content-right .elem1 .title {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-2);
+}
+
+.microsoft-power-solutions .container .tab-content-cards .tab-content .content-right .elem1 .title .text {
+  font-size: var(--fs-md);
+  font-weight: var(--fw-semibold);
+  font-family: var(--fontFamily-hikasami);
+  color: var(--text-black);
+}
+
+.microsoft-power-solutions .container .tab-content-cards .tab-content .content-right .elem1 .live {
+  padding: var(--spacing-1) var(--spacing-3) var(--spacing-1) var(--spacing-5);
+  font-size: 1.1rem;
+  font-family: var(--fontFamily-mono);
+  text-transform: uppercase;
+  border-radius: var(--radius-full);
+  position: relative;
+}
+
+.microsoft-power-solutions .container .tab-content-cards .tab-content .content-right .elem1 .live::before {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 6px;
+  height: 6px;
+  border-radius: var(--radius-circle);
+}
+
+.microsoft-power-solutions .container .tab-content-cards .tab-content .content-right .elem2 {
+  flex: 1;
+  padding: var(--spacing-7) var(--spacing-3);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: var(--spacing-3);
+  border-block: 1px solid #e1e1e1;
+}
+
+.microsoft-power-solutions .container .tab-content-cards .tab-content .content-right .elem2 .progress-bar-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  flex: 1;
+  gap: var(--spacing-5);
+}
+
+.microsoft-power-solutions .container .tab-content-cards .tab-content .content-right .elem2 .text-wala-elem {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: var(--spacing-3);
+}
+
+.microsoft-power-solutions .container .tab-content-cards .tab-content .content-right .elem2 .text-wala-elem .text {
+  font-size: 1.3rem;
+  font-family: var(--fontFamily-sans);
+  color: var(--text-black);
+  line-height: 1.4;
+}
+
+.microsoft-power-solutions .container .tab-content-cards .tab-content .content-right .elem2 .text-wala-elem .percentage {
+  font-size: var(--fs-sm);
+  font-family: var(--fontFamily-mono);
+}
+
+.microsoft-power-solutions .container .tab-content-cards .tab-content .content-right .elem2 .progress-bar {
+  width: 100%;
+  height: 7px;
+  background-color: #EDEFF1;
+  border-radius: var(--radius-full);
+  position: relative;
+}
+
+.microsoft-power-solutions .container .tab-content-cards .tab-content .content-right .elem2 .progress-bar .progress {
+  height: inherit;
+  border-radius: var(--radius-full);
+}
+
+.microsoft-power-solutions .container .tab-content-cards .tab-content .content-right .elem3 {
+  padding: var(--spacing-5) var(--spacing-3);
+  background: var(--bg-light-gray);
+}
+
+.microsoft-power-solutions .container .tab-content-cards .tab-content .content-right .elem3 .text {
+  font-size: 1.3rem;
+  font-family: var(--fontFamily-sans);
+}
+
+
+/* --------------------------------------*\
+  #CONTENT CARDS STYLING
+\*-------------------------------------- */
+
+/* Content Card 1 */
+
+.microsoft-power-solutions .container .tab-content-cards .tab-content-1 .content-left .elem1 .left-img {
+  border: 1.5px solid #84BCEE;
+  background-color: #DBE8F4;
+}
+
+.microsoft-power-solutions .container .tab-content-cards .tab-content-1 .content-left .elem1 .subtitle-text {
+  color: #1773c4;
+}
+
+.microsoft-power-solutions .container .tab-content-cards .tab-content-1 .content-left .elem2 .query-list .item::before {
+  background: #1B87E6;
+}
+
+.microsoft-power-solutions .container .tab-content-cards .tab-content-1 .content-right .elem1 .live {
+  background-color: #E3F0FC;
+  color: #1777CC;
+}
+
+.microsoft-power-solutions .container .tab-content-cards .tab-content-1 .content-right .elem1 .live::before {
+  background: #1B87E6;
+}
+
+.microsoft-power-solutions .container .tab-content-cards .tab-content .content-right .elem2 .progress-bar .progress {
+  background-color: #1B87E6;
+}
+
+/* Content Card 2 */
+
+.microsoft-power-solutions .container .tab-content-cards .tab-content-2 .content-left .elem1 .left-img {
+  border: 1.5px solid #B28BB2;
+  background-color: #E6DDE6;
+}
+
+.microsoft-power-solutions .container .tab-content-cards .tab-content-2 .content-left .elem1 .subtitle-text {
+  color: #9A2774;
+}
+
+.microsoft-power-solutions .container .tab-content-cards .tab-content-2 .content-left .elem2 .query-list .item::before {
+  background: #742774;
+}
+
+.microsoft-power-solutions .container .tab-content-cards .tab-content-2 .content-right .elem1 .live {
+  background-color: #EEE5EE;
+  color: #9A2774;
+}
+
+.microsoft-power-solutions .container .tab-content-cards .tab-content-2 .content-right .elem1 .live::before {
+  background: #742774;
+}
+
+.microsoft-power-solutions .container .tab-content-cards .tab-content-2 .content-right .elem2 .progress-bar .progress {
+  background-color: #742774;
+}
+
+/* Content Card 3 */
+
+.microsoft-power-solutions .container .tab-content-cards .tab-content-3 .content-left .elem1 .left-img {
+  border: 1.5px solid #77ABFB;
+  background-color: #D8E4F7;
+}
+
+.microsoft-power-solutions .container .tab-content-cards .tab-content-3 .content-left .elem1 .subtitle-text {
+  color: #0062F5;
+}
+
+.microsoft-power-solutions .container .tab-content-cards .tab-content-3 .content-left .elem2 .query-list .item::before {
+  background: #0066FF;
+}
+
+.microsoft-power-solutions .container .tab-content-cards .tab-content-3 .content-right .elem1 .live {
+  background-color: #E0ECFF;
+  color: #0066FF;
+}
+
+.microsoft-power-solutions .container .tab-content-cards .tab-content-3 .content-right .elem1 .live::before {
+  background: #0066FF;
+}
+
+.microsoft-power-solutions .container .tab-content-cards .tab-content-3 .content-right .elem2 .progress-bar .progress {
+  background-color: #0066FF;
+}
+
+/* Content Card 4 */
+
+.microsoft-power-solutions .container .tab-content-cards .tab-content-4 .content-left .elem1 .left-img {
+  border: 1.5px solid #7CA6A9;
+  background-color: #D9E3E4;
+}
+
+.microsoft-power-solutions .container .tab-content-cards .tab-content-4 .content-left .elem1 .subtitle-text {
+  color: #0B5B62;
+}
+
+.microsoft-power-solutions .container .tab-content-cards .tab-content-4 .content-left .elem2 .query-list .item::before {
+  background: #0B5B62;
+}
+
+.microsoft-power-solutions .container .tab-content-cards .tab-content-4 .content-right .elem1 .live {
+  background-color: #E1EBEC;
+  color: #0B5B62;
+}
+
+.microsoft-power-solutions .container .tab-content-cards .tab-content-4 .content-right .elem1 .live::before {
+  background: #0B5B62;
+}
+
+.microsoft-power-solutions .container .tab-content-cards .tab-content-4 .content-right .elem2 .progress-bar .progress {
+  background-color: #0B5B62;
+}
+
+/* Content Card 5 */
+
+.microsoft-power-solutions .container .tab-content-cards .tab-content-5 .content-left .elem1 .left-img {
+  border: 1.5px solid #7FAEA6;
+  background-color: #DAE5E3;
+}
+
+.microsoft-power-solutions .container .tab-content-cards .tab-content-5 .content-left .elem1 .subtitle-text {
+  color: #0B5B62;
+}
+
+.microsoft-power-solutions .container .tab-content-cards .tab-content-5 .content-left .elem2 .query-list .item::before {
+  background: #0F6B5C;
+}
+
+.microsoft-power-solutions .container .tab-content-cards .tab-content-5 .content-right .elem1 .live {
+  background-color: #E2EDEB;
+  color: #0B5B62;
+}
+
+.microsoft-power-solutions .container .tab-content-cards .tab-content-5 .content-right .elem1 .live::before {
+  background: #0B5B62;
+}
+
+.microsoft-power-solutions .container .tab-content-cards .tab-content-5 .content-right .elem2 .progress-bar .progress {
+  background-color: #0B5B62;
+}
+
+/* Content Card 6 */
+
+.microsoft-power-solutions .container .tab-content-cards .tab-content-6 .content-left .elem1 .left-img {
+  border: 1.5px solid #F4DE80;
+  background-color: #F5F0DA;
+}
+
+.microsoft-power-solutions .container .tab-content-cards .tab-content-6 .content-left .elem1 .subtitle-text {
+  color: #836C0C;
+}
+
+.microsoft-power-solutions .container .tab-content-cards .tab-content-6 .content-left .elem2 .query-list .item::before {
+  background: #F2C811;
+}
+
+.microsoft-power-solutions .container .tab-content-cards .tab-content-6 .content-right .elem1 .live {
+  background-color: #FDF8E2;
+  color: #836C0C;
+}
+
+.microsoft-power-solutions .container .tab-content-cards .tab-content-6 .content-right .elem1 .live::before {
+  background: #F2C811;
+}
+
+.microsoft-power-solutions .container .tab-content-cards .tab-content-6 .content-right .elem2 .progress-bar .progress {
+  background-color: #F2C811;
+}
+
+
+
+
+
+@media (min-width: 545px) {
+  .microsoft-power-solutions .container {
+    padding-inline: var(--spacing-8);
+  }
+}
+
+
+
+@media (min-width: 700px) {
+  .microsoft-power-solutions .container {
+    padding-inline: var(--spacing-10);
+  }
+
+  .microsoft-power-solutions .container .tab-content-cards {
+    padding: var(--spacing-8);
+  }
+}
+
+
+
+@media (min-width: 800px) {
+  .microsoft-power-solutions .container {
+    padding-inline: var(--spacing-12);
+  }
+}
+
+
+@media (min-width: 1000px) {
+  .microsoft-power-solutions .container {
+    padding-inline: var(--spacing-15);
+  }
+
+  .microsoft-power-solutions .container .tab-content-cards {
+    padding: var(--spacing-10);
+  }
+
+  .microsoft-power-solutions .container .tab-content-cards .tab-content {
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--spacing-5);
+  }
+}
+

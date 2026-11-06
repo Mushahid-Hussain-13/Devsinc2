@@ -1,0 +1,147 @@
+.salesforce-capabilities {
+  position: relative;
+  padding-block: var(--spacing-5);
+}
+
+.salesforce-capabilities .hero-header {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-2);
+}
+
+.salesforce-capabilities .hero-header .btn-wrapper {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: var(--spacing-2);
+}
+
+.salesforce-capabilities .hero-header .btn-wrapper .sales-btn {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-1);
+  height: 45px;
+  padding-inline: var(--spacing-5);
+  border-radius: var(--radius-full);
+  font-size: var(--fs-sm);
+  font-weight: var(--fw-semibold);
+  font-family: var(--fontFamily-hikasami);
+  color: var(--text-body);
+  background-color: var(--bg-white);
+  border: 1px solid #d7d7d7;
+}
+
+.salesforce-capabilities .hero-header .btn-wrapper .sales-btn .icon {
+  display: flex;
+}
+
+.salesforce-capabilities .hero-header .btn-wrapper .sales-btn1 {
+  background-color: #0176D3;
+  color: var(--text-white);
+}
+
+.salesforce-capabilities .list {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: var(--spacing-3);
+  margin-block-start: var(--spacing-5);
+}
+
+.salesforce-capabilities .list .item {
+  padding: var(--spacing-7) var(--spacing-5);
+  border-radius: var(--radius-large);
+  border: 1px solid #d9e0e4;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.2s ease;
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-3);
+}
+
+.salesforce-capabilities .list .item::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 5px;
+  background-color: #18BCB7;
+}
+
+.salesforce-capabilities .list .item:hover {
+  border-color: #18BCB7;
+  transform: translateY(-4px);
+}
+
+.salesforce-capabilities .list .item .item-img {
+  width: 45px;
+  height: 45px;
+  border-radius: var(--radius-small);
+  background-color: #DEF5F5;
+  border: 1px solid #18BCB7;
+  display: grid;
+  place-content: center;
+}
+
+.salesforce-capabilities .list .item .item-title {
+  font-size: var(--fs-md);
+  font-weight: var(--fw-semibold);
+  font-family: var(--fontFamily-hikasami);
+  color: var(--text-black);
+}
+
+.salesforce-capabilities .list .item .item-desc {
+  font-size: var(--fs-sm);
+  font-family: var(--fontFamily-sans);
+  color: var(--text-body);
+  flex: 1;
+}
+
+.salesforce-capabilities .list .item .item-link {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-2);
+  color: #048f8b;
+}
+
+.salesforce-capabilities .list .item .item-link .icon {
+  display: flex;
+}
+
+.salesforce-capabilities .list .item .item-link .text {
+  font-size: var(--fs-sm);
+  font-weight: var(--fw-semibold);
+  font-family: var(--fontFamily-hikasami);
+}
+
+
+
+
+
+@media (min-width: 545px) {
+  .salesforce-capabilities {
+    padding-block: var(--spacing-7);
+  }
+
+  .salesforce-capabilities .container {
+    width: 90%;
+    margin-inline: auto;
+  }
+
+  .salesforce-capabilities .list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+
+@media (min-width: 768px) {
+  .salesforce-capabilities {
+    padding-block: var(--spacing-7);
+  }
+
+  .salesforce-capabilities .list {
+    margin-block-start: var(--spacing-10);
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+}

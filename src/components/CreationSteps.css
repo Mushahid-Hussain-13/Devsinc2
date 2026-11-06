@@ -1,0 +1,117 @@
+.creation-steps {
+  position: relative;
+  padding-block: var(--spacing-5);
+}
+
+.creation-steps .container {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-5);
+}
+
+.creation-steps .container .content-left {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-2);
+}
+
+.creation-steps .container .content-left .section-heading {
+  margin-block-end: var(--spacing-4);
+}
+
+.creation-steps .container .content-left .section-desc {
+  font-size: var(--fs-sm);
+}
+
+.creation-steps .container .content-right {
+  flex-basis: 30%;
+}
+
+.creation-steps .container .content-right .top-elem {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-3);
+  margin-block-end: var(--spacing-5);
+}
+
+.creation-steps .container .content-right .top-elem .text-teal { color: #008080; }
+
+.creation-steps .container .content-right .top-elem .line {
+  flex: 1;
+  height: 1px;
+  background-color: #dddddd;
+}
+
+.creation-steps .container .content-right .steps {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: flex-start;
+  gap: var(--spacing-2);
+}
+
+.creation-steps .container .content-right .steps .step {
+  display: flex;
+  align-items: center;
+  text-wrap: wrap;
+  gap: var(--spacing-3);
+  min-height: 40px;
+  padding-inline: var(--spacing-4);
+  border-radius: var(--radius-medium);
+  font-size: var(--fs-sm);
+  font-family: var(--fontFamily-sans);
+  line-height: 1.2;
+  position: relative;
+  background-color: var(--bg-light-gray);
+  color: var(--text-black);
+  border: 1px solid #E8F8F7;
+  transition: 0.1s ease;
+}
+
+.creation-steps .container .content-right .steps .step::before {
+  content: "";
+  flex-shrink: 0;
+  width: 6px;
+  height: 6px;
+  border-radius: var(--radius-circle);
+  background-color: #0bb7b7;
+}
+
+.creation-steps .container .content-right .steps .step:hover {
+  background-color: #E8F8F7;
+  border-color: #50c8c0;
+}
+
+
+
+
+@media (min-width: 645px) {
+  .creation-steps .container {
+    padding: var(--spacing-6);
+  }
+
+  .section-heading {
+    font-size: var(--fs-2xl);
+  }
+}
+
+
+@media (min-width: 900px) {
+  .creation-steps .container {
+    padding: var(--spacing-6) var(--spacing-10);
+    flex-direction: row;
+    gap: var(--spacing-4);
+    align-items: center;
+  }
+
+  .section-heading {
+    font-size: var(--fs-5xl);
+  }
+
+  .creation-steps .container .content-right {
+    flex-basis: 55%;
+  }
+  
+  .creation-steps .container .content-right .steps {
+    gap: var(--spacing-3);
+  }
+}

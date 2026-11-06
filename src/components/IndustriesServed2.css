@@ -1,0 +1,98 @@
+.industry2-served {
+  padding-block: var(--spacing-7) var(--spacing-10);
+}
+
+.industry2-served .container {
+  padding-inline: var(--spacing-6);
+}
+
+.industry2-served .container .hero-header {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-2);
+}
+
+.industry2-served .industries2-list {
+  display: grid;
+  gap: var(--spacing-4);
+  margin-block-start: var(--spacing-5);
+}
+
+.industry2-served .industries2-list .list-item {
+  width: 100%;
+  height: 240px;
+  background-color: var(--bg-light-gray);
+  padding: var(--spacing-5);
+  border-radius: var(--radius-large);
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-3);
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.industry2-served .industries2-list .list-item:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.1);
+}
+
+.industry2-served .industries2-list .list-item .icon {
+  padding: var(--spacing-3);
+  background-color: #EDF1F4;
+  max-width: max-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--radius-small);
+}
+
+.industry2-served .industries2-list .list-item h3 {
+  font-size: var(--fs-md);
+  font-weight: var(--fw-semibold);
+  font-family: var(--fontFamily-hikasami);
+  color: var(--text-black);
+}
+
+.industry2-served .industries2-list .list-item p {
+  font-size: var(--fs-sm);
+  font-family: var(--fontFamily-sans);
+}
+
+
+
+@media (min-width: 545px) {
+  .industry2-served .container {
+    padding-inline: var(--spacing-8);
+  }
+
+  .industry2-served .industries2-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 745px) {
+  .industry2-served {
+    padding-block: var(--spacing-8) var(--spacing-14);
+  }
+
+  .industry2-served .container {
+    width: 90%;
+    padding-inline: 0;
+    margin-inline: auto;
+  }
+}
+
+@media (min-width: 900px) {
+  .industry2-served .industries2-list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 1050px) {
+  .industry2-served .industries2-list .list-item h3 {
+    font-size: var(--fs-lg);
+  }
+
+  .industry2-served .industries2-list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

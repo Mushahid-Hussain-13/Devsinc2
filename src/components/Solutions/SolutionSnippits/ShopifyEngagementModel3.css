@@ -1,0 +1,65 @@
+.shopify-engagement3 {
+  position: relative;
+  padding-block-end: var(--spacing-7);
+}
+
+.shopify-engagement3 .first-btn { display: none; }
+
+.shopify-engagement3 .service-list .service-item {
+  min-height: 400px;
+  background-color: #F2F9F6;
+}
+
+.shopify-engagement3 .engagement3 {
+  padding-block: 0;
+}
+
+.shopify-engagement3 .container > .btn {
+  margin-block-start: var(--spacing-7);
+  background-color: #A9D25A;
+  width: unset;
+}
+
+.shopify-engagement3 .engagement3 .container {
+  padding: 0;
+  width: unset;
+}
+
+.shopify-engagement3 .engagement3 .container .section-desc {
+  max-width: 700px;
+  margin-block-start: var(--spacing-5);
+}
+
+.shopify-engagement3 .service-list .top .subtitle {
+  background-color: transparent;
+  color: #96BF48;
+}
+
+.shopify-engagement3 .service-list .service-item .span {
+  color: #739c26;
+}
+
+@media (min-width: 545px) {
+  .shopify-engagement3 .container {
+    padding-inline: var(--spacing-8);
+  }
+  
+  .shopify-engagement3 .container > .btn {
+    width: max-content;
+  }
+}
+
+
+@media (min-width: 750px) {
+  .shopify-engagement3 .container {
+    width: 95%;
+    margin-inline: auto;
+  }
+}
+
+
+@media (min-width: 1050px) {
+  .shopify-engagement3 .container {
+    width: 92%;
+  }
+}

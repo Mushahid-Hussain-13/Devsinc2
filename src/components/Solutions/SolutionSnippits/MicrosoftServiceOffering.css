@@ -1,0 +1,107 @@
+.microsoft-service-offering {
+  position: relative;
+  padding-block: var(--spacing-7);
+}
+
+.microsoft-service-offering .container {
+  padding-inline: var(--spacing-7);
+}
+
+.microsoft-service-offering .container .hero-header {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-3);
+}
+
+.microsoft-service-offering .container .hero-header .section-tag {
+  position: relative;
+  padding-inline-start: var(--spacing-4);
+}
+
+.microsoft-service-offering .container .hero-header .section-tag::before {
+  content: "";
+  position: absolute;
+  top: 7px;
+  left: 0;
+  width: 8px;
+  height: 8px;
+  border-radius: var(--radius-circle);
+  background-color: var(--bg-teal);
+}
+
+.microsoft-service-offering .container .list {
+  display: grid;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+  gap: var(--spacing-4);
+  margin-block-start: var(--spacing-3);
+}
+
+.microsoft-service-offering .container .list .item {
+  background-color: var(--bg-white);
+  border: 1px solid #d2d2d2;
+  border-radius: var(--radius-large);
+  padding: var(--spacing-7);
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-3);
+  transition: transform 0.2s ease;
+}
+
+.microsoft-service-offering .container .list .item:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 0 10px 5px rgba(0,0,0,0.08);
+}
+
+.microsoft-service-offering .container .list .item .icon {
+  width: 50px;
+  height: 50px;
+  border-radius: var(--radius-large);
+  background-color: var(--bg-light-gray);
+  color: #333;
+  display: grid;
+  place-items: center;
+}
+
+.microsoft-service-offering .container .list .item .item-title {
+  font-size: 2rem;
+  font-weight: var(--fw-semibold);
+  font-family: var(--fontFamily-hikasami);
+  color: var(--text-black);
+  line-height: 1.4;
+}
+
+.microsoft-service-offering .container .list .item .item-desc {
+  font-size: 1.5rem;
+  font-family: var(--fontFamily-sans);
+  line-height: 1.4;
+}
+
+
+
+
+@media (min-width: 600px) {
+  .microsoft-service-offering .container {
+    padding-inline: var(--spacing-10);
+  }
+
+  .microsoft-service-offering .container .list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 900px) {
+  .microsoft-service-offering .container {
+    padding-inline: var(--spacing-14);
+  }
+
+  .microsoft-service-offering .container .list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+
+@media (min-width: 1100px) {
+  .microsoft-service-offering .container {
+    padding-inline: var(--spacing-16);
+  }
+}

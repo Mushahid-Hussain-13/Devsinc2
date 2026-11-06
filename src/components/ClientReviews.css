@@ -1,0 +1,117 @@
+.client-reviews {
+  position: relative;
+  margin: var(--spacing-5) var(--spacing-3);
+}
+
+.client-reviews .container {
+  position: relative;
+  padding: var(--spacing-12) var(--spacing-5);
+  border-radius: var(--radius-extra-large);
+  background: linear-gradient(to bottom,rgb(9, 45, 66), #0A354F);
+  overflow: hidden;
+}
+
+.client-reviews-header {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-3);
+}
+
+.client-reviews-header .span {
+  font-size: var(--fs-sm);
+  font-weight: var(--fw-regular);
+  font-family: var(--fontFamily-mono);
+  text-transform: uppercase;
+  color: #d0d5dc;
+}
+
+.client-reviews-header .section-heading {
+  color: var(--text-white);
+  line-height: 1.2;
+}
+
+.reviews-card-list {
+  margin-block-start: var(--spacing-10);
+  padding-block: var(--spacing-3);
+  display: flex;
+  align-items: stretch;
+  gap: var(--spacing-2);
+  scroll-snap-type: x mandatory;
+  overflow-y: hidden;
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+
+.reviews-card-list::-webkit-scrollbar { display: none; }
+
+.reviews-card-item {
+  flex: 0 0 93%;
+  background-color: rgba(255,255,255,0.012);
+  border: 1px solid #374f5c;
+  padding: var(--spacing-6) var(--spacing-4);
+  border-radius: var(--radius-large);
+  scroll-snap-align: start;
+}
+
+.reviews-card-item .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: var(--spacing-1);
+  height: 100%;
+}
+
+.client-reviews .card-text {
+  color: var(--text-white);
+  font-size: 1.5rem;
+  font-family: var(--fontFamily-sans);
+  padding-block-end: var(--spacing-4);
+  padding-block: var(--spacing-2);
+}
+
+.client-reviews .card-elem {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: var(--spacing-4);
+  padding-block: var(--spacing-4);
+  border-top: 1px solid #789bb3;
+}
+
+.client-reviews .card-elem h4 {
+  color: var(--text-white);
+  font-size: var(--fs-sm);
+  font-weight: var(--fw-semibold);
+  font-family: var(--fontFamily-hikasami);
+}
+
+.client-reviews .card-elem p {
+  font-size: var(--fs-xs);
+  font-family: var(--fontFamily-hikasami);
+  color: #8BA1AE;
+}
+
+.client-reviews .card-elem img {
+  filter: brightness(0) invert(1);
+}
+
+@media (min-width: 565px) {
+  .client-reviews .container {
+    padding-inline: var(--spacing-8);
+  }
+
+  .reviews-card-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: var(--spacing-4);
+  }
+}
+
+
+@media (min-width: 765px) {
+  .client-reviews .container {
+    padding-inline: var(--spacing-12);
+  }
+
+}

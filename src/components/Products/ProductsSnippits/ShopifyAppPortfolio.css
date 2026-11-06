@@ -1,0 +1,115 @@
+.shopify-app-portfolio {
+  position: relative;
+  padding: var(--spacing-8) var(--spacing-3);
+}
+
+.shopify-app-portfolio .container {
+  position: relative;
+  padding: var(--spacing-5);
+  background: var(--bg-light-gray);
+  border-radius: var(--radius-large);
+  overflow: hidden;
+}
+
+.shopify-app-portfolio .container .hero-header {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-2);
+}
+
+.shopify-app-portfolio .container .hero-header .section-desc {
+  max-width: 700px;
+}
+
+.shopify-app-portfolio .container .list {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: var(--spacing-4);
+  margin-block-start: var(--spacing-7);
+}
+
+.shopify-app-portfolio .container .list .item {
+  background: var(--bg-white);
+  padding: var(--spacing-5);
+  border-radius: var(--radius-large);
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-3);
+}
+
+.shopify-app-portfolio .container .list .item .subtitle {
+  font-size: var(--fs-xs);
+  font-family: var(--fontFamily-mono);
+  text-transform: uppercase;
+  color: #577b0e;
+}
+
+.shopify-app-portfolio .container .list .item .title {
+  font-size: var(--fs-lg);
+  font-weight: var(--fw-semibold);
+  font-family: var(--fontFamily-hikasami);
+  color: var(--text-black);
+}
+
+.shopify-app-portfolio .container .list .item .desc {
+  font-size: var(--fs-sm);
+  font-family: var(--fontFamily-sans);
+  line-height: 1.4;
+}
+
+.shopify-app-portfolio .container .list .item .link {
+  font-size: var(--fs-sm);
+  font-family: var(--fontFamily-mono);
+  line-height: 1.4;
+  color: #5f8317;
+  margin-block-start: auto;
+}
+
+.shopify-app-portfolio .container .list .item .link:hover {
+  color: #47650b;
+}
+
+@media (min-width: 545px) {
+  .shopify-app-portfolio .container {
+    padding: var(--spacing-8);
+  }
+
+  .shopify-app-portfolio .container .list .item {
+    padding: var(--spacing-6);
+  }
+
+  .shopify-app-portfolio .container .list .item .title {
+    font-size: var(--fs-xl);
+  }
+}
+
+@media (min-width: 730px) {
+  .shopify-app-portfolio {
+    padding: var(--spacing-8) var(--spacing-5);
+  }
+
+  .shopify-app-portfolio .container {
+    padding: var(--spacing-10) var(--spacing-12);
+  }
+
+  .shopify-app-portfolio .container .list {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 930px) {
+  .shopify-app-portfolio .container {
+    padding: var(--spacing-10) var(--spacing-12);
+  }
+
+  .shopify-app-portfolio .container .list {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: var(--spacing-5);
+  }
+}
+
+@media (min-width: 1100px) {
+  .shopify-app-portfolio .container {
+    padding: var(--spacing-10) var(--spacing-18);
+  }
+}

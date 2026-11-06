@@ -1,0 +1,125 @@
+.case-study {
+  position: relative;
+  padding-block: var(--spacing-7);
+}
+
+.case-study-header {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-2);
+  margin-block-end: var(--spacing-7);
+}
+
+.case-study-list {
+  display: grid;
+  gap: var(--spacing-5);
+}
+
+.case-study-item {
+  position: relative;
+  border-radius: var(--radius-large);
+  overflow: hidden;
+  background-color: var(--bg-jet);
+  color: var(--text-white);
+}
+
+.case-study-item .card-banner {
+  position: relative;
+  overflow: hidden;
+}
+
+.case-study-item .card-banner img { transition: 0.25s ease; }
+
+.case-study-item:hover .card-banner img { transform: scale(1.05); }
+
+.card-banner::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.8) 0%,
+    rgba(0, 0, 0, 0.5) 30%,
+    transparent 70%
+  );
+  pointer-events: none;
+}
+
+.case-study-item .card-banner .card-text {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: #0f1a21c8;
+  border-radius: var(--radius-full);
+  padding: 6px 8px;
+  font-size: 0.9rem;
+  font-weight: 300;
+  font-family: var(--fontFamily-sans);
+  text-transform: uppercase;
+  z-index: 1;
+}
+
+.card-content { padding: var(--spacing-4); }
+
+.case-study-item .card-title {
+  font-size: var(--fs-lg);
+  font-weight: var(--fw-semibold);
+  font-family: var(--fontFamily-hikasami);
+  line-height: 1.5;
+}
+
+.case-study-item .subtitle {
+  text-transform: uppercase;
+  color: #babcc1;
+  font-size: var(--fs-xs);
+  font-family: var(--fontFamily-mono);
+  margin-block: var(--spacing-2) var(--spacing-4);
+}
+
+.case-study-item .span {
+  font-size: var(--fs-sm);
+  font-family: var(--fontFamily-mono);
+}
+
+
+
+
+/**
+ * media queries (responsive for larger devices)
+ */
+
+
+@media (min-width: 545px) {
+  .case-study .container {
+    padding-inline: var(--spacing-7);
+  }
+}
+
+
+@media (min-width: 745px) {
+  .case-study .container {
+    padding-inline: var(--spacing-8);
+  }
+
+  .case-study-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+
+@media (min-width: 950px) {
+  .case-study .container {
+    padding-inline: var(--spacing-10);
+  }
+
+  .case-study-header {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .case-study-list {
+    grid-template-columns: repeat(3, 1fr);
+    padding-inline: var(--spacing-2);
+  }
+}

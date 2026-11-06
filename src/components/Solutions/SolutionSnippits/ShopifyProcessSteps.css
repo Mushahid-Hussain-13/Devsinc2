@@ -1,0 +1,197 @@
+.shopify-process {
+  position: relative;
+  padding: var(--spacing-5);
+}
+
+.shopify-process .container {
+  position: relative;
+  border-radius: 20px;
+  background-color: #fff;
+  overflow: hidden;
+  padding: var(--spacing-5);
+}
+
+.shopify-process .container::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  background:
+    radial-gradient(
+      ellipse 60% 70% at 100% 0%,
+      rgba(149, 191, 72, 0.215),
+      transparent 70%
+    ),
+    radial-gradient(
+      ellipse 45% 60% at 0% 100%,
+      rgba(150, 191, 72, 0.12),
+      transparent 70%
+    );
+}
+
+.shopify-process .hero-header {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-2);
+}
+
+.shopify-process .container .steps {
+  margin-block-start: var(--spacing-5);
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--spacing-5);
+  position: relative;
+}
+
+.shopify-process .container .steps .step {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: var(--spacing-4);
+  text-align: left;
+}
+
+.shopify-process .container .steps .step .circle {
+  position: relative;
+  z-index: 1;
+  width: 50px;
+  height: 50px;
+  border: 2px solid #96bf48;
+  border-radius: var(--radius-circle);
+  background-color: var(--bg-white);
+  color: #8ab833;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.shopify-process .container .steps .step .circle .icon {
+  line-height: 0;
+}
+
+.shopify-process .container .steps .step .circle .badge {
+  position: absolute;
+  top: -4px;
+  right: -4px;
+  width: 20px;
+  height: 20px;
+  border-radius: var(--radius-circle);
+  background-color: #8ab833;
+  color: var(--text-black);
+  font-size: var(--fs-xs);
+  font-family: var(--fontFamily-mono);
+  font-weight: var(--fw-bold);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.shopify-process .container .steps .step .step-title {
+  font-size: var(--fs-md);
+  font-weight: var(--fw-semibold);
+  font-family: var(--fontFamily-hikasami);
+  color: var(--text-black);
+}
+
+.shopify-process .container .steps .step .step-desc {
+  font-size: 1.5rem;
+  font-family: var(--fontFamily-sans);
+}
+
+.shopify-process .track {
+  display: none;
+}
+
+@media (min-width: 545px) {
+  .shopify-process .container {
+    padding: var(--spacing-10) var(--spacing-8);
+    margin-inline: auto;
+  }
+
+  .shopify-process .container .steps {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: var(--spacing-5);
+  }
+}
+
+@media (min-width: 750px) {
+  .shopify-process .container {
+    padding: var(--spacing-14) var(--spacing-12);
+    margin-inline: auto;
+  }
+
+  .shopify-process .container .steps {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: var(--spacing-7);
+  }
+
+  .shopify-process .container .steps .step {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--spacing-5);
+  }
+
+  .shopify-process .container .steps .step .step-text {
+    text-align: center;
+  }
+
+  .shopify-process .container .steps .step .circle {
+    width: 65px;
+    height: 65px;
+  }
+
+  .shopify-process .container .steps .step .circle .badge {
+    width: 23px;
+    height: 23px;
+  }
+
+  .shopify-process .container .steps .step .step-title {
+    font-size: var(--fs-lg);
+  }
+}
+
+@media (min-width: 1025px) {
+  .shopify-process .container {
+    padding: var(--spacing-14) var(--spacing-18);
+  }
+
+  .shopify-process .container .steps {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: var(--spacing-5);
+  }
+
+  .shopify-process .track {
+    display: block;
+    position: absolute;
+    z-index: 0;
+    top: 35px;
+    left:  calc((100% - 72px) / 8); /* phle circle ka center */
+    right: calc((100% - 72px) / 8); /* aakhri circle ka center */
+    border-top: 2px dashed #b9d98a;
+  }
+
+  .shopify-process .dot {
+    position: absolute;
+    top: -7px;
+    left: 0;
+    width: 12px;
+    height: 12px;
+    border-radius: var(--radius-circle);
+    background: #96BF48;
+    transform: translateX(-50%);
+    animation: moveDot 5s ease-in-out infinite;
+  }
+
+  @keyframes moveDot {
+    0% { left: 0; }
+    100% { left: 100%; }
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .process-steps .dot { animation: none; }
+}

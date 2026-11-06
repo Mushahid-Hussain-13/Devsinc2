@@ -1,0 +1,95 @@
+.unumpay-idea {
+  position: relative;
+  padding: var(--spacing-5);
+}
+
+.unumpay-idea .container {
+  width: 100%;
+  min-height: 80vh;
+  height: 100%;
+  padding: var(--spacing-20) var(--spacing-8);
+  background: linear-gradient(to bottom, #0b0417, #23123b);
+  border-radius: var(--radius-large);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--spacing-4);
+}
+
+.unumpay-idea .container .section-heading {
+  color: var(--text-white);
+  font-size: var(--fs-3xl);
+  max-width: 750px;
+}
+
+.unumpay-idea .container .section-desc {
+  color: #b8a6d6;
+}
+
+.unumpay-idea .container .btn-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: var(--spacing-3);
+  margin-block-start: var(--spacing-5);
+}
+
+.unumpay-idea .container .btn-wrapper .hero-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--spacing-2);
+  height: 50px;
+  padding-inline: var(--spacing-5);
+  border-radius: var(--radius-medium);
+  border: 1px solid #8f65c3;
+  color: var(--text-white);
+  font-size: var(--fs-md);
+  font-weight: var(--fw-medium);
+  font-family: var(--fontFamily-hikasami);
+  transition: 0.2s ease;
+}
+
+.unumpay-idea .container .btn-wrapper .hero-btn.purple-btn {
+  background: #7a48b7;
+  color: var(--text-black);
+  border-color: #7241ac;
+}
+
+.unumpay-idea .container .btn-wrapper .hero-btn.purple-btn:hover {
+  background: #A47DE0;
+}
+
+.unumpay-idea .container .btn-wrapper .hero-btn .icon { display: flex; }
+
+.unumpay-idea .container .btn-wrapper .hero-btn:hover {
+  background: #2E2141;
+}
+
+
+@media (min-width: 545px) {
+  .unumpay-idea .container .section-heading {
+    font-size: var(--fs-5xl);
+  }
+}
+
+
+@media (min-width: 730px) {
+  .unumpay-idea .container {
+    min-height: 60vh;
+  }
+
+  .unumpay-idea .container .section-heading {
+    font-size: var(--fs-7xl);
+  }
+}
+
+
+@media (min-width: 1050px) {
+  .unumpay-idea .container .section-heading {
+    font-size: var(--fs-8xl);
+  }
+}

@@ -1,0 +1,104 @@
+.shopify-app-capabilities {
+  position: relative;
+  padding-block: var(--spacing-6);
+}
+
+.shopify-app-capabilities .container {
+  padding-inline: var(--spacing-6);
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-5);
+}
+
+.shopify-app-capabilities .container .list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: var(--spacing-4);
+}
+
+.shopify-app-capabilities .container .list .item {
+  background: var(--bg-light-gray);
+  padding: var(--spacing-4);
+  border-radius: var(--radius-large);
+  min-height: 250px;
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-3);
+  transition: transform 0.3s ease;
+}
+
+.shopify-app-capabilities .container .list .item.wide:last-child {
+  grid-column: span 2;
+}
+
+.shopify-app-capabilities .container .list .item:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 0 15px 10px rgba(0, 0, 0, 0.05);
+}
+
+.shopify-app-capabilities .container .list .item .number {
+  font-size: var(--fs-md);
+  font-weight: var(--fw-medium);
+  font-family: var(--fontFamily-mono);
+}
+
+.shopify-app-capabilities .container .list .item .title {
+  font-size: var(--fs-md);
+  font-weight: var(--fw-semibold);
+  font-family: var(--fontFamily-hikasami);
+  color: var(--text-black);
+  line-height: 1.4;
+}
+
+.shopify-app-capabilities .container .list .item .desc {
+  font-size: var(--fs-xs);
+  font-family: var(--fontFamily-sans);
+  line-height: 1.5;
+}
+
+
+
+@media (min-width: 545px) {
+  .shopify-app-capabilities .container {
+    padding-inline: var(--spacing-10);
+  }
+}
+
+
+
+@media (min-width: 1000px) {
+  .shopify-app-capabilities {
+    padding-block: var(--spacing-10);
+  }
+
+  .shopify-app-capabilities .container {
+    padding-inline: var(--spacing-15);
+  }
+
+  .shopify-app-capabilities .container .list {
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+  }
+
+  .shopify-app-capabilities .container .list .item {
+    grid-column: span 2;
+    padding: var(--spacing-7);
+  }
+
+  .shopify-app-capabilities .container .list .item.wide,
+  .shopify-app-capabilities .container .list .item.wide:last-child {
+    grid-column: span 3;
+  }
+
+  .shopify-app-capabilities .container .list .item .desc {
+    font-size: 1.3rem;
+  }
+}
+
+
+
+
+@media (min-width: 1000px) {
+  .shopify-app-capabilities .container {
+    padding-inline: var(--spacing-20);
+  }
+}

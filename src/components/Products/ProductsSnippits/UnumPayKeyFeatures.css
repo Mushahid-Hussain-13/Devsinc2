@@ -1,0 +1,165 @@
+.unumpay-key-features {
+  position: relative;
+  padding: var(--spacing-5) var(--spacing-3);
+}
+
+.unumpay-key-features .container {
+  padding: var(--spacing-6);
+  background: var(--bg-light-gray);
+  border-radius: var(--radius-large);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-5);
+}
+
+.unumpay-key-features .container .hero-header {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: var(--spacing-2);
+}
+
+.unumpay-key-features .container .tab-btns {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-2);
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding-block: var(--spacing-2);
+}
+
+.unumpay-key-features .container .tab-btns .tab-btn {
+  width: max-content;
+  padding: var(--spacing-2) var(--spacing-5);
+  background: var(--bg-white);
+  color: var(--text-black);
+  border: 1px solid #dedede;
+  white-space: nowrap;
+  border-radius: var(--radius-full);
+  font-size: var(--fs-sm);
+  font-weight: var(--fw-medium);
+  font-family: var(--fontFamily-hikasami);
+  transition: 0.2s ease;
+}
+
+.unumpay-key-features .container .tab-btns .tab-btn:hover:not(.active) {
+  border-color: #6b3fa0;
+}
+
+.unumpay-key-features .container .tab-btns .tab-btn.active {
+  background: #6b3fa0;
+  color: var(--text-white);
+}
+
+.unumpay-key-features .container .tab-content-wrapper .tab-content {
+  background: var(--bg-white);
+  border: 1px solid #dedede;
+  padding: var(--spacing-8);
+  border-radius: var(--radius-large);
+  position: relative;
+  overflow: hidden;
+  display: grid;
+  gap: var(--spacing-8);
+}
+
+.unumpay-key-features .container .tab-content-wrapper .tab-content::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 5px;
+  background: #6b3fa0;
+  display: block;
+}
+
+.unumpay-key-features .container .tab-content .content {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-3);
+}
+
+.unumpay-key-features .container .tab-content .title {
+  font-size: var(--fs-xl);
+  font-weight: var(--fw-semibold);
+  font-family: var(--fontFamily-hikasami);
+  color: var(--text-black);
+  line-height: 1.4;
+}
+
+.unumpay-key-features .container .tab-content .desc {
+  font-size: var(--fs-md);
+  font-family: var(--fontFamily-sans);
+  line-height: 1.5;
+}
+
+.unumpay-key-features .container .tab-content .query-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-3);
+}
+
+.unumpay-key-features .container .tab-content .query-list .query {
+  position: relative;
+  font-size: var(--fs-sm);
+  font-family: var(--fontFamily-sans);
+  padding-inline-start: var(--spacing-5);
+}
+
+.unumpay-key-features .container .tab-content .query-list .query::before {
+  content: "";
+  position: absolute;
+  top: 30%;
+  left: 0;
+  width: 6px;
+  height: 6px;
+  background: #6b3fa0;
+  transform: rotate(45deg);
+}
+
+.unumpay-key-features .container .tab-content .img-holder {
+  border-radius: var(--radius-large);
+}
+
+@media (min-width: 545px) {
+  .unumpay-key-features {
+    padding: var(--spacing-5);
+  }
+
+  .unumpay-key-features .container {
+    padding: var(--spacing-10);
+  }
+
+  .unumpay-key-features .container .tab-content .title {
+    font-size: var(--fs-2xl);
+  }
+}
+
+@media (min-width: 768px) {
+  .unumpay-key-features .container {
+    padding: var(--spacing-10) var(--spacing-14);
+    gap: var(--spacing-8);
+  }
+
+  .unumpay-key-features .container .tab-content-wrapper .tab-content {
+    padding: var(--spacing-10);
+  }
+
+  .unumpay-key-features .container .tab-btns {
+    overflow: hidden;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .unumpay-key-features .container .tab-content .content {
+    gap: var(--spacing-4);
+  }
+}
+
+@media (min-width: 1000px) {
+  .unumpay-key-features .container .tab-content-wrapper .tab-content {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+  }
+}

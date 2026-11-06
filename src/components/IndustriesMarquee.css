@@ -1,0 +1,131 @@
+.industries-marquee {
+  --card-w: 280px;
+  --marquee-speed: 40s;
+  --fade-w: 24px;
+
+  position: relative;
+  padding: var(--spacing-6) var(--spacing-3);
+}
+
+.industries-marquee .container {
+  padding: var(--spacing-5);
+  border-radius: var(--radius-extra-large);
+  background-color: var(--bg-light-gray);
+  overflow: hidden;
+}
+
+.industries-marquee .container .hero-header {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-3);
+}
+
+.industries-marquee .container .marquee {
+  margin-block-start: var(--spacing-5);
+  margin-inline: calc(var(--spacing-5) * -1);
+  overflow: hidden;
+  -webkit-mask-image: linear-gradient(
+    to right, transparent 0, #000 var(--fade-w),
+    #000 calc(100% - var(--fade-w)), transparent 100%
+  );
+  mask-image: linear-gradient(
+    to right, transparent 0, #000 var(--fade-w),
+    #000 calc(100% - var(--fade-w)), transparent 100%
+  );
+}
+
+.industries-marquee .container .card-list {
+  display: flex;
+  align-items: stretch;
+  gap: var(--spacing-3);
+  width: max-content;
+  animation: industries-scroll var(--marquee-speed) linear infinite;
+  will-change: transform;
+}
+
+.industries-marquee .container .card-list:hover,
+.industries-marquee .container .card-list:focus-within {
+  animation-play-state: paused;
+}
+
+@keyframes industries-scroll {
+  from { transform: translateX(0); }
+  to   { transform: translateX(calc(-50% - var(--spacing-3) / 2)); }
+}
+
+.industries-marquee .container .card-list .card-item {
+  flex: 0 0 var(--card-w);
+  min-height: 200px;
+  background-color: var(--bg-white);
+  border-radius: var(--radius-large);
+  padding: var(--spacing-5);
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-3);
+}
+
+.industries-marquee .container .card-list .card-item .card-icon {
+  color: #17BAB0;
+  background-color: #E8F8F7;
+  padding: var(--spacing-3);
+  border-radius: var(--radius-medium);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: max-content;
+}
+
+.industries-marquee .container .card-list .card-item .card-title {
+  font-size: var(--fs-md);
+  font-weight: var(--fw-semibold);
+  font-family: var(--fontFamily-hikasami);
+  color: var(--text-black);
+}
+
+.industries-marquee .container .card-list .card-item .card-desc {
+  font-size: var(--fs-sm);
+  font-family: var(--fontFamily-sans);
+}
+
+
+
+@media (min-width: 640px) {
+  .industries-marquee {
+    --card-w: 300px;
+    --marquee-speed: 45s;
+    --fade-w: 48px;
+  }
+
+  .industries-marquee .container {
+    padding-block: var(--spacing-7) var(--spacing-10);
+  }
+
+  .industries-marquee .container .hero-header {
+    padding-inline: var(--spacing-8);
+  }
+
+  .industries-marquee .container .card-list .card-item {
+    min-height: 220px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .industries-marquee {
+    --card-w: 300px;
+    --marquee-speed: 50s;
+    --fade-w: 80px;
+  }
+
+  .industries-marquee .container {
+    padding-block: var(--spacing-7) var(--spacing-15);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .industries-marquee .container .marquee {
+    overflow-x: auto;
+  }
+  .industries-marquee .container .card-list {
+    animation: none;
+  }
+}

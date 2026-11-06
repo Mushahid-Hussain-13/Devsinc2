@@ -1,0 +1,259 @@
+.shift-section {
+  position: relative;
+  margin-block: var(--spacing-8);
+  padding-inline: var(--spacing-4);
+}
+
+.shift-container {
+  background-color: var(--bg-light-gray);
+  padding: var(--spacing-10) var(--spacing-5);
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-8);
+  border-radius: var(--radius-large);
+}
+
+.shift-content {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.hide-mobile {
+  display: none !important;
+}
+
+.show-mobile {
+  display: block;
+}
+
+.shift-section .cards-wrapper {
+  position: relative;
+  width: 100%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: var(--radius-large);
+  overflow: hidden;
+}
+
+.shift-section .card {
+  padding: var(--spacing-6) var(--spacing-5);
+  position: relative;
+}
+
+.shift-section .card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+}
+
+.shift-section .card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: var(--spacing-5);
+}
+
+.shift-section .card-header .card-badge {
+  font-size: var(--fs-xs);
+  font-family: var(--fontFamily-mono);
+  letter-spacing: 1.5px;
+  color: var(--text-body);
+  text-transform: uppercase;
+}
+
+.shift-section .card-header .card-badge.teal-text {
+  color: var(--text-teal);
+}
+
+.shift-section .mobile-arrow-btn {
+  width: 33px;
+  height: 33px;
+  background: var(--bg-light-gray);
+  color: var(--text-teal);
+  border-radius: 50%;
+  display: grid;
+  place-content: center;
+}
+
+.shift-section .mobile-arrow-btn svg {
+  width: 18px;
+  height: 18px;
+  animation: pointingArrow 0.8s ease-in-out infinite alternate;
+}
+
+@keyframes pointingArrow {
+  from {
+    transform: translateX(-3px);
+  }
+  to {
+    transform: translateX(3px);
+  }
+}
+
+.shift-section .card-title {
+  font-size: var(--fs-xl);
+  font-weight: var(--fw-semibold);
+  font-family: var(--fontFamily-hikasami);
+  margin-bottom: var(--spacing-5);
+}
+
+.shift-section .card-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.shift-section .card-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--spacing-3);
+  font-size: var(--fs-sm);
+  font-family: var(--fontFamily-sans);
+  line-height: 1.35;
+}
+
+.shift-section .card-list li .icon {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  display: grid;
+  place-content: center;
+  flex-shrink: 0;
+  animation: bouncingBall 1.1s ease-in-out infinite alternate;
+}
+
+@keyframes bouncingBall {
+  from {
+    transform: scale(0.7);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+
+
+.legacy-card {
+  background-color: var(--bg-white);
+  color: var(--text-body);
+}
+
+.ai-card {
+  color: var(--text-white);
+  background-color: var(--bg-jet);
+}
+
+.legacy-card::before {
+  background: var(--gradient-1);
+}
+
+.ai-card::before {
+  background: var(--gradient-2);
+}
+
+.shift-section .card-list li .icon.minus-icon {
+  color: var(--text-black);
+  background-color: var(--bg-light-gray);
+}
+
+.shift-section .card-list li .icon.check-icon {
+  color: var(--text-teal);
+  background-color: #093942;
+}
+
+.shift-section .card.legacy-card .mobile-arrow-btn {
+  color: var(--text-teal);
+  background: var(--bg-light-gray);
+}
+
+.shift-section .card.ai-card .mobile-arrow-btn {
+  color: var(--text-teal);
+  background: #093942;
+  transform: rotate(180deg);
+}
+
+.desktop-arrow {
+  display: none;
+}
+
+
+
+@media (min-width: 575px) {
+  .shift-section .mobile-arrow-btn {
+    display: none;
+  }
+
+
+  .shift-section .cards-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--spacing-10);
+    transition: 0.25s ease;
+  }
+
+  .shift-section .cards-wrapper:hover {
+    box-shadow: 0 0 15px 10px rgba(0, 0, 0, 0.1); 
+  }
+
+  .shift-section .card { transition: 0.25s ease; }
+
+  .shift-section .card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+
+  .hide-mobile {
+    display: block !important;
+  }
+
+  .legacy-card {
+    border-radius: 16px 0 0 16px;
+  }
+
+  .shift-section .desktop-arrow {
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 10;
+    animation: movingArrow 0.8s ease-in-out infinite alternate;
+  }
+
+  @keyframes movingArrow {
+    from {
+      transform: translate(-70%, -50%);
+    }
+    to {
+      transform: translate(-50%, -50%);
+    }
+  }
+}
+
+
+
+
+@media (min-width: 830px) {
+  .shift-container {
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .shift-content {
+    flex-basis: 45%;
+  }
+
+  .shift-section .cards-wrapper {
+    flex-basis: 45%;
+  }
+}
+
+
+@media (min-width: 1150px) {
+  .shift-container {
+    padding: var(--spacing-15) var(--spacing-10);
+  }
+}

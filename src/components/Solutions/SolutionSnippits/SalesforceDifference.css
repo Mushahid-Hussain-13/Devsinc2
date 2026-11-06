@@ -1,0 +1,89 @@
+.salesforce-difference {
+  position: relative;
+  padding: var(--spacing-5) var(--spacing-3);
+}
+
+.salesforce-difference .container {
+  background: linear-gradient(to left, #062941, #051824);
+  padding: var(--spacing-7) var(--spacing-5);
+  overflow: hidden;
+  border-radius: var(--radius-large);
+}
+
+.salesforce-difference .container .hero-header {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-2);
+}
+
+.salesforce-difference .container .section-tag { color: #0176D3; }
+
+.salesforce-difference .container .section-heading { color: var(--text-white); }
+
+.salesforce-difference .container .list {
+  margin-block-start: var(--spacing-5);
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: var(--spacing-3);
+}
+
+.salesforce-difference .container .list .item {
+  padding: var(--spacing-7) var(--spacing-6);
+  background: #0B1D29;
+  border: 1px solid #283B47;
+  border-radius: var(--radius-large);
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-3);
+}
+
+.salesforce-difference .container .list .item .icon {
+  color: #0176D3;
+}
+
+.salesforce-difference .container .list .item .title {
+  color: var(--text-white);
+  font-size: var(--fs-xl);
+  font-weight: var(--fw-semibold);
+  font-family: var(--fontFamily-hikasami);
+  line-height: 1.4;
+}
+
+.salesforce-difference .container .list .item .desc {
+  font-size: var(--fs-md);
+  font-family: var(--fontFamily-sans);
+  line-height: 1.5;
+  color: #9cb1c4;
+}
+
+
+
+@media (min-width: 545px) {
+  .salesforce-difference .container {
+    padding: var(--spacing-10) var(--spacing-7);
+  }
+
+  .salesforce-difference .container .list {
+    margin-block-start: var(--spacing-7);
+  }
+}
+
+
+@media (min-width: 700px) {
+  .salesforce-difference .container {
+    padding: var(--spacing-15) var(--spacing-10);
+  }
+
+  .salesforce-difference .container .list {
+    margin-block-start: var(--spacing-10);
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: var(--spacing-4);
+  }
+}
+
+
+@media (min-width: 700px) {
+  .salesforce-difference .container {
+    padding: var(--spacing-15);
+  }
+}

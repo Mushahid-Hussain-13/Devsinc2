@@ -1,0 +1,130 @@
+.processing {
+  position: relative;
+  padding: var(--spacing-6) var(--spacing-3);
+}
+
+.processing .container {
+  background-color: var(--bg-light-gray);
+  padding: var(--spacing-5);
+  border-radius: var(--radius-extra-large);
+  position: relative;
+}
+
+.processing .hero-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: var(--spacing-4);
+}
+
+.processing .hero-header div {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-2);
+}
+
+.processing .hero-header div h2 { color: var(--text-black); }
+
+.processing .container .list {
+  display: grid;
+  gap: var(--spacing-4);
+  margin-block-start: var(--spacing-5);
+}
+
+.processing .container .list .item {
+  background-color: var(--bg-white);
+  padding: var(--spacing-5);
+  border-radius: var(--radius-large);
+  width: 100%;
+  min-height: 250px;
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-4);
+}
+
+.processing .container .list .item .top {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--spacing-3);
+}
+
+.processing .container .list .item .top .text-teal {
+  font-size: var(--fs-md);
+  font-weight: var(--fw-medium);
+  font-family: var(--fontFamily-mono);
+  color: #018181;
+}
+
+.processing .container .list .item .top h3 {
+  font-size: var(--fs-lg);
+  font-weight: var(--fw-semibold);
+  font-family: var(--fontFamily-hikasami);
+  color: var(--text-black);
+  line-height: 1.4;
+}
+
+.processing .container .list .item .section-desc {
+  font-size: var(--fs-sm);
+}
+
+.processing .container .list .item .span {
+  font-size: var(--fs-xs);
+  font-weight: var(--fw-medium);
+  font-family: var(--fontFamily-mono);
+  color: #016e6e;
+  margin-block-start: auto;
+  padding-block: var(--spacing-2);
+  border-top: 1px solid lightgray;
+}
+
+
+
+
+
+@media (min-width: 580px) {
+  .processing .container {
+    padding: var(--spacing-7);
+  }
+}
+
+
+
+@media (min-width: 650px) {
+  .processing .container .list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .processing .section-heading { font-size: var(--fs-3xl); }
+
+  
+  .processing .container .list .item .top h3 { font-size: 2rem; }
+
+  .processing .container .list .item .section-desc {
+    font-size: 1.5rem;
+  }
+}
+
+
+
+@media (min-width: 800px) {
+  .processing .container .list {
+    gap: var(--spacing-5);
+  }
+
+  .processing .section-heading {
+    font-size: var(--fs-5xl);
+  }
+}
+
+
+
+@media (min-width: 1050px) {
+  .processing .container{
+    padding-inline: var(--spacing-20);
+  }
+
+  .processing .container .list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

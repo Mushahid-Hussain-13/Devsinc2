@@ -1,0 +1,110 @@
+.software-challanges {
+  position: relative;
+  padding: var(--spacing-6) var(--spacing-3);
+}
+
+.software-challanges .container {
+  padding: var(--spacing-6);
+  background-color: var(--bg-light-gray);
+  border-radius: var(--radius-medium);
+}
+
+.software-challanges .container .elem {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-2);
+}
+
+.software-challanges .container .list {
+  display: grid;
+  gap: var(--spacing-3);
+  margin-block-start: var(--spacing-5);
+}
+
+.software-challanges .container .list .item {
+  width: 100%;
+  min-height: 200px;
+  padding: var(--spacing-5) var(--spacing-4);
+  border-radius: var(--radius-medium);
+  background-color: var(--bg-white);
+  border: 1px solid #e6e5e5;
+
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-2);
+  transform: translateY(0);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.software-challanges .container .list .item:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.software-challanges .container .list .item .subtitle {
+  padding: 5px var(--spacing-3);
+  border-radius: var(--radius-full);
+  font-size: 1.1rem;
+  font-family: var(--fontFamily-mono);
+  text-transform: uppercase;
+  color: var(--text-white);
+  max-width: max-content;
+}
+
+.software-challanges .container .list .item .subtitle1 {
+  background-color: #4A6FA0;
+}
+
+.software-challanges .container .list .item .subtitle2 {
+  background-color: #6C5A94;
+}
+
+.software-challanges .container .list .item .subtitle3 {
+  background-color: #4C8067;
+}
+
+.software-challanges .container .list .item .subtitle4 {
+  background-color: #9B6934;
+}
+
+.software-challanges .container .list .item .subtitle7 {
+  background-color: #4A1D96;
+}
+
+.software-challanges .container .list .item .title {
+  font-size: var(--fs-lg);
+  font-weight: var(--fw-semibold);
+  font-family: var(--fontFamily-hikasami);
+  color: var(--text-black);
+  line-height: 1.3;
+}
+
+.software-challanges .container .list .item .desc {
+  font-size: var(--fs-sm);
+  font-family: var(--fontFamily-sans);
+  color: var(--text-black);
+}
+
+
+@media (min-width: 600px) {
+  .software-challanges .container {
+    padding: var(--spacing-7) var(--spacing-5);
+  }
+
+  .software-challanges .container .list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 900px) {
+  .software-challanges .container {
+    padding: var(--spacing-10) var(--spacing-12);
+  }
+
+  .software-challanges .container .list {
+    grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+    gap: var(--spacing-5);
+  }
+
+  .software-challanges .container .list .item { min-height: 220px; }
+}

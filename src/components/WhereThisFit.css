@@ -1,0 +1,108 @@
+.where-this-fit {
+  position: relative;
+  padding: var(--spacing-7) var(--spacing-3);
+}
+
+.where-this-fit .container {
+  background-color: var(--bg-light-gray);
+  padding: var(--spacing-7) var(--spacing-5);
+  overflow: hidden;
+  border-radius: var(--radius-large);
+}
+
+.where-this-fit .container .hero-header {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-2);
+}
+
+.where-this-fit .container .hero-header .section-desc { max-width: 700px; }
+
+.where-this-fit .container .list {
+  margin-block-start: var(--spacing-5);
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: var(--spacing-3);
+}
+
+.where-this-fit .container .list .item {
+  padding: var(--spacing-5);
+  background-color: var(--bg-white);
+  border-radius: var(--radius-large);
+  min-height: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-3);
+  transition: box-shadow 0.1s ease;
+}
+
+.where-this-fit .container .list .item:not(.active):hover {
+  box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.05);
+}
+
+.where-this-fit .container .list .item.active {
+  border: 2px solid #18BCB7;
+}
+
+.where-this-fit .container .list .item .subtitle {
+  font-size: var(--fs-xs);
+  font-family: var(--fontFamily-mono);
+  text-transform: uppercase;
+}
+
+.where-this-fit .container .list .item.active .subtitle {
+  color: #08a49f;
+}
+
+.where-this-fit .container .list .item .title {
+  font-size: var(--fs-lg);
+  font-weight: var(--fw-semibold);
+  font-family: var(--fontFamily-hikasami);
+  color: var(--text-black);
+  line-height: 1.4;
+}
+
+.where-this-fit .container .list .item .desc {
+  font-size: var(--fs-md);
+  font-family: var(--fontFamily-sans);
+  color: var(--text-back);
+  line-height: 1.5;
+}
+
+.where-this-fit .container .list .item .last-span {
+  margin-block-start: auto;
+  font-size: var(--fs-xs);
+  font-family: var(--fontFamily-mono);
+}
+
+
+@media (min-width: 545px) {
+  .where-this-fit .container {
+    padding: var(--spacing-8);
+  }
+
+  .where-this-fit .container .list {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: var(--spacing-4);
+  }
+
+  .where-this-fit .container .list .item {
+    min-height: 250px;
+  }
+}
+
+
+@media (min-width: 750px) {
+  .where-this-fit .container {
+    padding: var(--spacing-12) var(--spacing-10);
+  }
+}
+
+
+@media (min-width: 1050px) {
+  .where-this-fit .container {
+    padding: var(--spacing-12) var(--spacing-20);
+    gap: var(--spacing-5);
+  }
+}
+

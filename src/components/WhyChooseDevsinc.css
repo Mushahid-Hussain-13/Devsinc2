@@ -1,0 +1,89 @@
+.why-choose-devsinc {
+  position: relative;
+  padding: var(--spacing-5) var(--spacing-3);
+}
+
+.why-choose-devsinc .container {
+  padding: var(--spacing-5);
+  background-color: #022539;
+  background-image:
+  linear-gradient(rgba(255,255,255,0.04) 1px, transparent 1px),
+  linear-gradient(90deg, rgba(255,255,255,0.04) 1px, transparent 1px);
+  background-size: 32px 32px;
+  border-radius: var(--radius-large);
+  overflow: hidden;
+}
+
+.why-choose-devsinc .container .hero-header {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-3);
+}
+
+.why-choose-devsinc .container .hero-header .section-tag { color: #9db3b8; }
+
+.why-choose-devsinc .container .hero-header .section-heading { color: var(--text-white); }
+
+.why-choose-devsinc .container .list {
+  margin-block-start: var(--spacing-5);
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: var(--spacing-3);
+}
+
+.why-choose-devsinc .container .list .item {
+  background: #132A39;
+  border: 1px solid #3E5361;
+  padding: var(--spacing-5);
+  border-radius: var(--radius-large);
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-3);
+}
+
+.why-choose-devsinc .container .list .item .number {
+  font-size: var(--fs-md);
+  font-family: var(--fontFamily-mono);
+  color: #18BCAB;
+}
+
+.why-choose-devsinc .container .list .item h3 {
+  font-size: var(--fs-xl);
+  font-family: var(--fontFamily-hikasami);
+  color: var(--text-white);
+  line-height: 1.4;
+}
+
+.why-choose-devsinc .container .list .item p {
+  font-size: 1.5rem;
+  font-family: var(--fontFamily-sans);
+  line-height: 1.5;
+  color: #9db3b8;
+}
+
+
+
+@media (min-width: 545px) {
+  .why-choose-devsinc .container {
+    padding: var(--spacing-8);
+  }
+
+  .why-choose-devsinc .container .list {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: var(--spacing-5);
+  }
+}
+
+
+@media (min-width: 768px) {
+  .why-choose-devsinc .container {
+    padding: var(--spacing-12);
+  }
+}
+
+
+@media (min-width: 1020px) {
+  .why-choose-devsinc .container {
+    padding: var(--spacing-14) var(--spacing-20);
+  }
+}

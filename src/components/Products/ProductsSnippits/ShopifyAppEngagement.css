@@ -1,0 +1,115 @@
+.shopify-app-engagement {
+  position: relative;
+  padding-block: var(--spacing-5);
+}
+
+.shopify-app-engagement .container {
+  padding-inline: var(--spacing-5);
+  display: grid;
+  gap: var(--spacing-4);
+}
+
+.shopify-app-engagement .container .content-left {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-4);
+}
+
+.shopify-app-engagement .container .content-left .section-desc {
+  max-width: 700px;
+}
+
+.shopify-app-engagement .container .content-left .hero-btn {
+  height: 50px;
+  width: fit-content;
+  padding-inline: var(--spacing-5);
+  border-radius: var(--radius-medium);
+  background: #9ac845;
+  color: var(--text-black);
+  font-size: 1.5rem;
+  font-weight: var(--fw-medium);
+  font-family: var(--fontFamily-hikasami);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1.3;
+  transition: background 0.2s ease;
+}
+
+.shopify-app-engagement .container .content-left .hero-btn:hover {
+  background: #a9d754;
+}
+
+.shopify-app-engagement .container .content-right {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-4);
+}
+
+.shopify-app-engagement .container .content-right .elem {
+  padding: var(--spacing-4) var(--spacing-6);
+  background: var(--bg-light-gray);
+  border-radius: var(--radius-large);
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-2);
+}
+
+.shopify-app-engagement .container .content-right .elem h3 {
+  flex: 0 0 20%;
+  font-size: var(--fs-3xl);
+  font-weight: var(--fw-semibold);
+  font-family: var(--fontFamily-hikasami);
+  color: var(--text-black);
+  line-height: 1;
+}
+
+.shopify-app-engagement .container .content-right .elem p {
+  flex: 1;
+  min-width: 0;
+  font-size: var(--fs-sm);
+  font-family: var(--fontFamily-sans);
+  line-height: 1.4;
+}
+
+.shopify-app-engagement .container .content-right .elem.dark-elem {
+  background: var(--bg-jet);
+}
+
+.shopify-app-engagement .container .content-right .elem.dark-elem h3 {
+  color: #96bf42;
+}
+
+.shopify-app-engagement .container .content-right .elem.dark-elem p {
+  color: #8fa4b1;
+}
+
+@media (min-width: 545px) {
+  .shopify-app-engagement .container {
+    padding-inline: var(--spacing-8);
+  }
+}
+
+@media (min-width: 768px) {
+  .shopify-app-engagement .container {
+    padding-inline: var(--spacing-12);
+  }
+
+  .shopify-app-engagement .container .content-right .elem {
+    padding: var(--spacing-6) var(--spacing-8);
+  }
+}
+
+@media (min-width: 950px) {
+  .shopify-app-engagement .container {
+    padding-inline: var(--spacing-14);
+    grid-template-columns: 2fr 1fr;
+    align-items: center;
+  }
+}
+
+@media (min-width: 1100px) {
+  .shopify-app-engagement .container {
+    padding-inline: var(--spacing-20);
+  }
+}

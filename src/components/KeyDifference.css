@@ -1,0 +1,100 @@
+.difference {
+  position: relative;
+  padding: var(--spacing-10) var(--spacing-3);
+}
+
+.difference .container {
+  background-color: var(--bg-jet);
+  padding: var(--spacing-5);
+  border-radius: var(--radius-extra-large);
+  position: relative;
+  overflow: hidden;
+  z-index: 10;
+}
+
+.difference .container .hero-header {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-3);
+}
+
+.difference .container .section-heading { color: var(--text-white); }
+
+.difference .container .difference-list {
+  display: grid;
+  gap: var(--spacing-3);
+  margin-block-start: var(--spacing-5);
+}
+
+.difference .container .difference-list .difference-item {
+  padding: var(--spacing-8);
+  border: 1px solid #35494e;
+  border-radius: var(--radius-large);
+  backdrop-filter: blur(20px);
+}
+
+.difference .container .difference-list .difference-item .icon {
+  pointer-events: none;
+  user-select: none;
+}
+
+.difference .container .difference-list .difference-item .title {
+  font-size: var(--fs-xl);
+  font-weight: var(--fw-semibold);
+  font-family: var(--fontFamily-hikasami);
+  color: var(--text-white);
+  line-height: 1.3;
+  margin-block: var(--spacing-2) var(--spacing-4);
+}
+
+.difference .container .difference-list .difference-item .desc {
+  font-size: var(--fs-sm);
+  font-family: var(--fontFamily-sans);
+  line-height: 1.55;
+  color: #adccd7;
+}
+
+.difference .container .bg-overlay-color {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100px;
+  height: 300px;
+  background-color: var(--bg-teal);
+  opacity: 0.5;
+  filter: blur(100px);
+  pointer-events: none;
+  user-select: none;
+  z-index: -1;
+}
+
+
+
+
+
+@media (min-width: 645px) {
+  .difference .container {
+    padding: var(--spacing-8) var(--spacing-6);
+  }
+
+  .difference .container .difference-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+
+@media (min-width: 1000px) {
+  .difference .container {
+    padding: var(--spacing-10) var(--spacing-17);
+  }
+
+  .difference .container .difference-list {
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--spacing-5);
+  }
+
+  .difference .container .bg-overlay-color {
+    width: 500px;
+    height: 150px;
+  }
+}
