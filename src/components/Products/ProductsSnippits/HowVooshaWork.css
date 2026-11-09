@@ -1,0 +1,99 @@
+.how-voosha-work {
+  position: relative;
+  padding-block: var(--spacing-6);
+}
+
+.how-voosha-work .container {
+  padding-inline: var(--spacing-7);
+}
+
+.how-voosha-work .container .wrapper-1 {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: var(--spacing-7);
+  padding-block: var(--spacing-5);
+  border-bottom: 1px solid #e8e7e7;
+}
+
+.how-voosha-work .container .wrapper-1 .content {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-3);
+}
+
+.how-voosha-work .container .wrapper-1 .content .section-heading { max-width: 550px; }
+
+.how-voosha-work .container .wrapper-1 .img-holder {
+  border-radius: var(--radius-large);
+}
+
+.how-voosha-work .container .wrapper-2 {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: var(--spacing-5);
+  margin-block-start: var(--spacing-5);
+}
+
+.how-voosha-work .container .wrapper-2 .elem {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-2);
+}
+
+.how-voosha-work .container .wrapper-2 .elem .number {
+  font-size: var(--fs-md);
+  font-weight: var(--fw-medium);
+  font-family: var(--fontFamily-mono);
+  color: #ba4409;
+}
+
+.how-voosha-work .container .wrapper-2 .elem .title {
+  font-size: var(--fs-lg);
+  font-weight: var(--fw-semibold);
+  font-family: var(--fontFamily-hikasami);
+  line-height: 1.4;
+  color: var(--text-black);
+}
+
+.how-voosha-work .container .wrapper-2 .elem .desc {
+  font-size: var(--fs-sm);
+  font-family: var(--fontFamily-sans);
+}
+
+
+
+@media (min-width: 545px) {
+  .how-voosha-work .container {
+    padding-inline: var(--spacing-8);
+  }
+}
+
+
+@media (min-width: 730px) {
+  .how-voosha-work .container {
+    padding-inline: var(--spacing-10);
+  }
+
+  .how-voosha-work .container .wrapper-1 {
+    grid-template-columns: 1.5fr 1fr;
+  }
+
+  .how-voosha-work .container .wrapper-2 {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: var(--spacing-8);
+  }
+}
+
+
+@media (min-width: 850px) {
+  .how-voosha-work .container {
+    padding-inline: var(--spacing-14);
+  }
+}
+
+
+@media (min-width: 1050px) {
+  .how-voosha-work .container {
+    padding-inline: var(--spacing-16);
+  }
+}

@@ -1,0 +1,140 @@
+.voosha-build {
+  position: relative;
+  padding: var(--spacing-7) var(--spacing-4);
+}
+
+.voosha-build .container {
+  position: relative;
+  padding: var(--spacing-5);
+  border-radius: var(--radius-large);
+  background-color: var(--bg-jet);
+  overflow: hidden;
+  isolation: isolate;
+  z-index: 10;
+}
+
+.voosha-build .container .wrapper-1,
+.voosha-build .container .wrapper-1 .elem {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-2);
+  position: relative;
+  z-index: 5;
+}
+
+.voosha-build .container .wrapper-1 .elem .section-tag { color: #FFA872; }
+
+.voosha-build .container .wrapper-1 .elem .section-heading { color: var(--text-white); }
+
+.voosha-build .container .wrapper-1 .elem .section-desc { color: #c7d0d2; }
+
+.voosha-build .container .wrapper-1 .elem .hero-btn {
+  font-size: var(--fs-sm);
+  font-family: var(--fontFamily-mono);
+  color: #FFA872;
+  width: max-content;
+  transition: 0.2s ease;
+}
+
+.voosha-build .container .wrapper-1 .elem .hero-btn:hover { color: var(--text-white); }
+
+.voosha-build .container .wrapper-2 {
+  margin-block-start: var(--spacing-5);
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: var(--spacing-4);
+}
+
+.voosha-build .container .wrapper-2 .elem {
+  background-color: #06202F;
+  border: 1px solid #0c3b57;
+  border-radius: var(--radius-large);
+  overflow: hidden;
+}
+
+.voosha-build .container .wrapper-2 .elem > a {
+  padding: var(--spacing-6);
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-3);
+}
+
+.voosha-build .container .wrapper-2 .elem .subtitle {
+  text-transform: uppercase;
+  font-size: var(--fs-xs);
+  font-weight: var(--fw-medium);
+  font-family: var(--fontFamily-mono);
+  color: #7592a3;
+}
+
+.voosha-build .container .wrapper-2 .elem .title {
+  font-size: var(--fs-xl);
+  font-weight: var(--fw-semibold);
+  font-family: var(--fontFamily-hikasami);
+  color: var(--text-white);
+  line-height: 1.4;
+}
+
+.voosha-build .container .wrapper-2 .elem .desc {
+  font-size: 1.5rem;
+  font-family: var(--fontFamily-sans);
+  color: #9dabb4;
+  line-height: 1.6;
+}
+
+.voosha-build .container .bg-overlay-color {
+  width: 300px;
+  height: 300px;
+  background-color: #fc610138;
+  filter: blur(100px);
+  position: absolute;
+  top: -100px;
+  right: -50px;
+  z-index: -1;
+}
+
+
+@media (min-width: 545px) {
+  .voosha-build .container {
+    padding: var(--spacing-8);
+  }
+}
+
+
+@media (min-width: 750px) {
+  .voosha-build .container {
+    padding: var(--spacing-12);
+  }
+
+  .voosha-build .container .wrapper-1 {
+    gap: var(--spacing-12);
+  }
+
+  .voosha-build .wrapper-1 .section-heading {
+    font-size: var(--fs-6xl);
+  }
+
+  .voosha-build .wrapper-1 .section-desc {
+    font-size: var(--fs-lg);
+    max-width: max-content;
+  }
+
+  .voosha-build .container .wrapper-2 {
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--spacing-6);
+    margin-block-start: var(--spacing-10);
+  }
+}
+
+
+@media (min-width: 1000px) {
+  .voosha-build .container {
+    padding: var(--spacing-12) var(--spacing-16);
+  }
+
+  .voosha-build .container .wrapper-1 {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: var(--spacing-12);
+  }
+}

@@ -626,3 +626,34 @@ export const UnumPayFaQs = {
     },
   ]
 }
+
+
+export const VooshaFaQs = {
+  title: "Before you sign up",
+  items: [
+    {
+      question: "What is Voosha?",
+      answer: "Voosha is a creator marketing marketplace. Brands post campaigns with a budget and a deal type, creators pitch for them, content is approved before it publishes, and every click and sale is credited to the creator who drove it through trackable links and unique discount codes. Payment is held securely until the brand approves the work. It runs as a web app at app.voosha.io with native iOS and Android apps.",
+    },
+    {
+      question: "Voosha is new. Why should a brand use it now?",
+      answer: "Because the cost of trying is time rather than budget. Voosha is free for brands during beta, so there is no platform fee to justify. Campaigns are tracked from the first one, so you get an attribution record instead of screenshots. And secure payments mean you are not exposed if a creator underdelivers, because funds are released only after you approve the work. Early members also keep an early adopter discount when paid plans launch.",
+    },
+    {
+      question: "Is Voosha an agency or a platform?",
+      answer: "A platform. Nobody at Voosha books creators on your behalf or takes a media commission. Brands choose creators themselves, approve the content themselves, and see the attribution directly.",
+    },
+    {
+      question: "Is Voosha only available in Pakistan?",
+      answer: "Voosha's beta is focused on Pakistan, where creator payouts run through secure digital payments and bank transfer. Brands operating elsewhere can talk to Devsinc about access, and payout coverage expands as the platform moves out of beta.",
+    },
+    {
+      question: "Did Devsinc build Voosha, and does Devsinc run it?",
+      answer: "Yes. Voosha is a Devsinc product, built and operated by the same teams that build Shopify storefronts, checkout apps, and payment infrastructure for retail brands. It is listed here alongside Devsinc's other products for that reason.",
+    },
+    {
+      question: "What does it cost?",
+      answer: "Nothing during beta, for brands and for creators. Paid plans are planned after beta and are not priced yet. Anyone who joins during beta keeps an early adopter discount when those plans launch.",
+    },
+  ]
+}

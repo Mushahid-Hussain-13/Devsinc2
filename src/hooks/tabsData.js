@@ -10,6 +10,10 @@ import unumpayFeature3 from '../assets/unumpay-feature3.webp';
 import unumpayFeature4 from '../assets/unumpay-feature4.webp';
 import unumpayFeature5 from '../assets/unumpay-feature5.webp';
 import unumpayFeature6 from '../assets/unumpay-feature6.webp';
+import vooshaFeature1 from '../assets/voosha-feature-1.webp';
+import vooshaFeature2 from '../assets/voosha-feature-2.webp';
+import vooshaFeature3 from '../assets/voosha-feature-3.webp';
+import vooshaFeature4 from '../assets/voosha-feature-4.webp';
 
 export const tabsData = [
   {
@@ -141,8 +145,6 @@ export const tabsData = [
 ]
 
 
-
-
 export const unumPayData = [
   {
     id: "intuitive-payment-integrations",
@@ -214,6 +216,58 @@ export const unumPayData = [
       "Collect deposits ahead of fulfillment",
       "Works across pre order and made-to-order flows",
       "Balance due tracked against the original order",
+    ],
+  },
+]
+
+
+export const VooshaData = [
+  {
+    id: "campaign-attribution",
+    label: "Campaign attribution",
+    img: vooshaFeature1,
+    title: "Campaign attribution",
+    description: "The brand dashboard credits every click and sale to the creator who drove it, so a campaign's return is a number, not an argument.",
+    queryList: [
+      "Sales and click volume tracked per creator, side by side",
+      "Conversion trend charted across the campaign window",
+      "Every handle ranked by tracked performance, not followers",
+    ],
+  },
+  {
+    id: "creator-earnings",
+    label: "Creator earnings",
+    img: vooshaFeature2,
+    title: "Creator earnings",
+    description: "Confirmed sales and payment status sit side by side, so creators always know what has cleared and what is still pending approval.",
+    queryList: [
+      "Available balance separated from funds still securing",
+      "Per-campaign payout history with status at a glance",
+      "Payment through secure digital payments",
+    ],
+  },
+  {
+    id: "trackable-assets",
+    label: "Trackable assets",
+    img: vooshaFeature3,
+    title: "Trackable assets",
+    description: "A unique short link and discount code generated per creator per campaign, so attribution holds even off-platform.",
+    queryList: [
+      "One-click generation of a link and code per collaboration",
+      "Ownership tagged to the creator who generated it",
+      "Works off-platform: stories, bios, video descriptions",
+    ],
+  },
+  {
+    id: "approval-queue",
+    label: "Approval queue",
+    img: vooshaFeature4,
+    title: "Approval queue",
+    description: "Content is reviewed and approved before it goes live, and payment only releases once the brand signs off.",
+    queryList: [
+      "Every submission held until the brand reviews it",
+      "Approve or request changes in a single action",
+      "Secured payment releases only after sign-off",
     ],
   },
 ]

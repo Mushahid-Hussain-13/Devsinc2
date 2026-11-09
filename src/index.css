@@ -383,6 +383,11 @@ body {
   font-size: var(--fs-sm);
 }
 
+.voosha-faq .faq-section .wrapper1 .btn { background-color: #d65219; }
+
+.voosha-faq .faq-section .wrapper1 .btn:hover { background-color: #c14a17; }
+
+
 
 
 /* --------------------------------------*\

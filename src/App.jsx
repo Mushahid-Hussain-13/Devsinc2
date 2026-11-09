@@ -34,6 +34,7 @@ import IndustriesMarquee from "./components/IndustriesMarquee.jsx";
 import ShopifyProcessSteps from "./components/Solutions/SolutionSnippits/ShopifyProcessSteps.jsx";
 import ShopifyApps from "./components/Products/ShopifyApps.jsx";
 import UnumPay from "./components/Products/UnumPay.jsx";
+import Voosha from "./components/Products/Voosha.jsx";
 
 
 const Home = () => {
@@ -104,6 +105,7 @@ const App = () => {
       <Route path="/salesforce" element={<Salesforce />}/>
       <Route path="/shopify-apps" element={<ShopifyApps />}/>
       <Route path="/unumpay" element={<UnumPay />}/>
+      <Route path="voosha" element={<Voosha />}/>
     </Routes>
   );
 };
