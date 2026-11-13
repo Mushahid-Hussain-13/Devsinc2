@@ -35,6 +35,7 @@ import ShopifyProcessSteps from "./components/Solutions/SolutionSnippits/Shopify
 import ShopifyApps from "./components/Products/ShopifyApps.jsx";
 import UnumPay from "./components/Products/UnumPay.jsx";
 import Voosha from "./components/Products/Voosha.jsx";
+import PulseNotify from "./components/Products/PulseNotify.jsx";
 
 
 const Home = () => {
@@ -105,7 +106,8 @@ const App = () => {
       <Route path="/salesforce" element={<Salesforce />}/>
       <Route path="/shopify-apps" element={<ShopifyApps />}/>
       <Route path="/unumpay" element={<UnumPay />}/>
-      <Route path="voosha" element={<Voosha />}/>
+      <Route path="/voosha" element={<Voosha />}/>
+      <Route path="/pulse-notify" element={<PulseNotify />}/>
     </Routes>
   );
 };

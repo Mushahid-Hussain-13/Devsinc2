@@ -230,8 +230,8 @@ const Navbar = () => {
                   </Link>
                 </li>
                 <li className="sub-link">
-                  <Link to="/enterprice-hrm">
-                    Enterprice HRM
+                  <Link to="/pulse-notify">
+                    Pulse Notify
                     <span className="arrow">
                       <ArrowUpRight size={15} />
                     </span>

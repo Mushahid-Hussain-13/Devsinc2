@@ -1,0 +1,232 @@
+.why-pulse-notify {
+  padding: var(--spacing-15) var(--spacing-3);
+  position: relative;
+  z-index: 10;
+}
+
+.why-pulse-notify .container {
+  position: relative;
+  padding: 0 var(--spacing-4);
+  z-index: 7;
+}
+
+.why-pulse-notify .container .content-left,
+.why-pulse-notify .container .content-right {
+  position: relative;
+  color: var(--text-body);
+  background-color: var(--bg-white);
+  border: 1px solid #dfe4e6;
+  border-radius: var(--radius-large);
+  box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+  z-index: 5;
+}
+
+.why-pulse-notify .container .content-left {
+  margin-block-end: var(--spacing-7);
+}
+
+.why-pulse-notify .container .content-left .notification {
+  width: fit-content;
+  padding: var(--spacing-4);
+  border: 1px solid #d0d4d6;
+  box-shadow: 0 10px 10px rgba(0,0,0,0.1);
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-3);
+  position: absolute;
+  top: -40px;
+  left: 10px;
+  border-radius: var(--radius-large);
+  background-color: var(--bg-white);
+}
+
+.why-pulse-notify .container .content-left .notification .bell-icon {
+  padding: 12px;
+  border-radius: var(--radius-medium);
+  background-color: #051824;
+  color: var(--text-teal);
+  display: grid;
+  place-items: center;
+}
+
+.why-pulse-notify .container .content-left .notification .title {
+  font-size: var(--fs-sm);
+  font-weight: var(--fw-medium);
+  font-family: var(--fontFamily-hikasami);
+  line-height: 1.4;
+  color: #117281;
+}
+
+.why-pulse-notify .container .content-left .notification .para {
+  font-size: var(--fs-xs);
+  font-family: var(--fontFamily-sans);
+  line-height: 1.4;
+}
+
+.why-pulse-notify .container .content-left .elem {
+  margin-block-start: var(--spacing-15);
+  padding-inline: var(--spacing-4);
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-2);
+}
+
+.why-pulse-notify .container .content-left .elem .bell-icon {
+  padding: var(--spacing-2);
+  border-radius: var(--radius-small);
+  background-color: var(--bg-jet);
+  color: var(--text-teal);
+  display: grid;
+  place-items: center;
+}
+
+.why-pulse-notify .container .content-left .elem .para {
+  font-size: var(--fs-sm);
+  font-weight: var(--fw-medium);
+  font-family: var(--fontFamily-hikasami);
+  line-height: 1.4;
+}
+
+.why-pulse-notify .container .content-left .progress-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-5);
+  padding: var(--spacing-4) var(--spacing-4) var(--spacing-8) var(--spacing-4);
+}
+
+.why-pulse-notify .container .content-left .progress-wrapper .progress-elem {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-2);
+  padding: var(--spacing-3);
+  background-color: #F7FAFA;
+  border: 1px solid #cfd6d6;
+  border-radius: var(--radius-medium);
+}
+
+.why-pulse-notify .container .content-left .progress-wrapper .progress-elem .icon {
+  padding: var(--spacing-3);
+  border-radius: var(--radius-small);
+  background-color: #DDF1F0;
+  color: #0F7D76;
+  display: grid;
+  place-items: center;
+}
+
+.why-pulse-notify .container .content-left .progress-wrapper .progress-elem .child { width: 100%; }
+
+.why-pulse-notify .container .content-left .progress-wrapper .progress-elem .child h3 {
+  font-size: var(--fs-sm);
+  font-weight: var(--fw-semibold);
+  font-family: var(--fontFamily-hikasami);
+  margin-block-end: var(--spacing-2);
+  line-height: 1.4;
+  color: var(--text-black);
+}
+
+.why-pulse-notify .container .content-left .progress-wrapper .progress-elem .child .progress-bar {
+  width: 100%;
+  height: 6px;
+  border-radius: var(--radius-large);
+  background-color: #E3EAEA;
+}
+
+.why-pulse-notify .container .content-left .progress-wrapper .progress-elem .circle {
+  width: 8px;
+  height: 8px;
+  border-radius: var(--radius-circle);
+  background-color: var(--bg-teal);
+  flex-shrink: 0;
+  flex-grow: 1;
+  margin-inline-start: var(--spacing-3);
+}
+
+.why-pulse-notify .container .content-right {
+  padding: var(--spacing-4);
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-3);
+}
+
+.why-pulse-notify .container .content-right .line {
+  width: 100px;
+  height: 2.3px;
+  border-radius: var(--radius-medium);
+  background-color: #007e7e;
+}
+
+.why-pulse-notify .container .content-right .title {
+  font-size: var(--fs-xl);
+  font-weight: var(--fw-semibold);
+  font-family: var(--fontFamily-hikasami);
+  line-height: 1.4;
+  color: #017575;
+}
+
+.why-pulse-notify .bg-wrapper-color {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100vh;
+  background-color: #DCEBEA;
+  z-index: 1;
+}
+
+
+
+
+@media (min-width: 545px) {
+  .why-pulse-notify { padding: var(--spacing-15) var(--spacing-5); }
+
+  .why-pulse-notify .container { padding: var(--spacing-7) var(--spacing-5); }
+
+  .why-pulse-notify .container .content-right { padding: var(--spacing-7); }
+
+  .why-pulse-notify .container .content-left .progress-wrapper .progress-elem .child .progress-bar { width: 70%; }
+}
+
+@media (min-width: 700px) {
+  .why-pulse-notify .container { padding: var(--spacing-7); }
+
+  .why-pulse-notify .container .content-right { padding: var(--spacing-8); }
+
+  .why-pulse-notify .container .content-right .line { margin-block: var(--spacing-2); }
+
+  .why-pulse-notify .container .content-left .progress-wrapper .progress-elem .child .progress-bar { width: 70%; }
+}
+
+@media (min-width: 900px) {
+  .why-pulse-notify .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-items: center;
+    padding-inline: var(--spacing-12);
+  }
+
+  .why-pulse-notify .container .content-left {
+    height: max-content;
+    margin-block-end: 0;
+  }
+
+  .why-pulse-notify .container .content-right {
+    padding: var(--spacing-10) var(--spacing-8);
+    margin-inline-start: -80px;
+  }
+
+  .why-pulse-notify .bg-wrapper-color {
+    height: 75vh;
+  }
+}
+
+@media (min-width: 1000px) {
+  .why-pulse-notify .container {
+    padding-inline: var(--spacing-16);
+  }
+
+  .why-pulse-notify .container .content-right {
+    padding: var(--spacing-14) var(--spacing-8);
+  }
+}

@@ -39,6 +39,7 @@
 
 .salesforce-difference .container .list .item .icon {
   color: #0176D3;
+  font-family: var(--fontFamily-mono);
 }
 
 .salesforce-difference .container .list .item .title {

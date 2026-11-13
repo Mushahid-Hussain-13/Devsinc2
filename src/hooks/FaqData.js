@@ -657,3 +657,34 @@ export const VooshaFaQs = {
     },
   ]
 }
+
+
+export const PulseNotifyFaQs = {
+  title: "Before You Install",
+  items: [
+    {
+      question: "What are Shopify web push notifications?",
+      answer: "Short messages that appear on a shopper’s device after they opt in on your storefront, with no email address or phone number involved.",
+    },
+    {
+      question: "What’s included on the free plan?",
+      answer: "Welcome message, order confirmation, fulfillment and cancellation alerts, and one campaign send per month.",
+    },
+    {
+      question: "Do my shoppers need to share an email or phone number?",
+      answer: "No. They opt in to notifications directly on your storefront.",
+    },
+    {
+      question: "Which languages does it support?",
+      answer: "English at launch.",
+    },
+    {
+      question: "What does it cost?",
+      answer: "There is a free plan, plus Basic at $9.99 per month and Pro at $19.99 per month. Charges are in USD and billed every 30 days.",
+    },
+    {
+      question: "Who supports it?",
+      answer: "Our team at Devsinc supports the app directly.",
+    },
+  ]
+}
