@@ -28,7 +28,7 @@ const PulseNotifyHeroSection = ({ heroImg, subtitle1, subtitle2, title, desc, bt
 
             {btnText1}
           </Link>
-          <Link to="/" className='btn-secondary'>
+          <Link url="#" className='btn-secondary'>
             {btnText2}
           </Link>
         </div>

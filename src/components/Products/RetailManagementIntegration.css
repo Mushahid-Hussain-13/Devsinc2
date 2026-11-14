@@ -1,0 +1,96 @@
+.retail-management-integration {
+  position: relative;
+  padding: var(--spacing-8) var(--spacing-3);
+}
+
+.retail-management-integration .container {
+  position: relative;
+  padding: var(--spacing-5);
+  background-color: var(--bg-light-gray);
+  border-radius: var(--radius-large);
+  overflow: hidden;
+}
+
+.retail-management-integration .container .hero-header {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-2);
+}
+
+.retail-management-integration .container .hero-header .section-heading {
+  max-width: 700px;
+}
+
+.retail-management-integration .container .list {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: var(--spacing-5);
+  margin-block-start: var(--spacing-8);
+}
+
+.retail-management-integration .container .list .item {
+  background-color: var(--bg-white);
+  padding: var(--spacing-6);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.02);
+  border-radius: var(--radius-large);
+}
+
+.retail-management-integration .container .list .item div {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-3);
+}
+
+.retail-management-integration .container .list .item div .title {
+  font-size: var(--fs-lg);
+  font-weight: var(--fw-semibold);
+  font-family: var(--fontFamily-hikasami);
+  line-height: 1.45;
+  color: var(--text-black);
+}
+
+.retail-management-integration .container .list .item div .tag {
+  font-size: 1rem;
+  font-family: var(--fontFamily-mono);
+  text-transform: uppercase;
+  padding: var(--spacing-1) var(--spacing-3);
+  border-radius: var(--radius-full);
+  background-color: var(--text-light-gray);
+  color: #333;
+}
+
+.retail-management-integration .container .list .item .section-desc {
+  font-size: 1.5rem;
+  margin-block-start: var(--spacing-3);
+}
+
+
+
+
+
+@media (min-width: 545px) {
+  .retail-management-integration .container {
+    padding: var(--spacing-7);
+  }
+}
+
+@media (min-width: 740px) {
+  .retail-management-integration .container {
+    padding: var(--spacing-9);
+  }
+
+  .retail-management-integration .container .list {
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--spacing-6);
+  }
+}
+
+@media (min-width: 1050px) {
+  .retail-management-integration .container {
+    padding: var(--spacing-10) var(--spacing-16);
+  }
+
+  .retail-management-integration .container .list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

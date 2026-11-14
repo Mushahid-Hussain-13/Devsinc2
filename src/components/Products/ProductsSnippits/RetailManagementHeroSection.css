@@ -1,0 +1,247 @@
+.retail-management-service-section {
+  position: relative;
+  width: 100%;
+  min-height: 70vh;
+  background-color: var(--bg-jet);
+  background-image: radial-gradient(
+    circle at 0% 0%,
+    rgba(26, 100, 147, 0.8) 0%,
+    rgba(20, 112, 169, 0.427) 0%,
+    transparent 40%
+  );
+  overflow: hidden;
+}
+
+.retail-management-service-section-container {
+  padding: var(--spacing-10) var(--spacing-7);
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-3);
+  margin-block-start: var(--spacing-5);
+}
+
+.retail-management-service-section-container .subtitle-wrapper {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-3);
+  flex-wrap: wrap;
+}
+
+.retail-management-service-section-container .subtitle {
+  color: var(--text-white);
+  font-size: var(--fs-xs);
+  font-family: var(--fontFamily-mono);
+  padding: var(--spacing-2) var(--spacing-3) var(--spacing-2) var(--spacing-8);
+  background: #0b2027;
+  border: 1px solid #588146;
+  border-radius: var(--radius-full);
+  position: relative;
+}
+
+.retail-management-service-section-container .subtitle::before {
+  content: "";
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  width: 8px;
+  height: 8px;
+  background: #18BCB7;
+  border-radius: var(--radius-circle);
+}
+
+.retail-management-service-section-container .title {
+  font-size: var(--fs-4xl);
+  font-weight: var(--fw-semibold);
+  font-family: var(--fontFamily-hikasami);
+  line-height: 1.25;
+  color: var(--text-white);
+}
+
+.retail-management-service-section-container .desc {
+  display: none;
+}
+
+.retail-management-service-section-container .btn-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-3);
+  margin-block-start: var(--spacing-5);
+}
+
+.retail-management-service-section-container .btn-primary {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: var(--spacing-2);
+  height: 50px;
+  padding-inline: var(--spacing-5);
+  border-radius: var(--radius-medium);
+  background-color: #10a6a1;
+  color: var(--text-white);
+  font-size: var(--fs-md);
+  font-weight: var(--fw-medium);
+  font-family: var(--fontFamily-sans);
+  transition: 0.2s ease;
+}
+
+.retail-management-service-section-container .btn-primary:hover {
+  background-color: #18bcb6;
+}
+
+.retail-management-service-section-container .btn-primary span {
+  margin-top: 5px;
+}
+
+.retail-management-service-section-container .btn-secondary {
+  background-color: transparent;
+  border: 1px solid #ffffffd4;
+  height: 50px;
+  padding-inline: var(--spacing-5);
+  border-radius: var(--radius-medium);
+  color: var(--text-white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: var(--fs-md);
+  font-weight: var(--fw-medium);
+  font-family: var(--fontFamily-sans);
+}
+
+.retail-management-service-section-container .btn-secondary:hover {
+  background-color: #f9f9f910;
+}
+
+.retail-management-service-section .work-details {
+  margin-block-start: var(--spacing-5);
+  padding: var(--spacing-7) var(--spacing-5);
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--spacing-4);
+  border-top: 1px solid #ffffff36;
+  backdrop-filter: blur(5px);
+}
+
+.retail-management-service-section .work-details .elem {
+  padding-inline: var(--spacing-2);
+}
+
+.retail-management-service-section .work-details .elem h3 {
+  font-size: var(--fs-xl);
+  font-weight: var(--fw-semibold);
+  font-family: var(--fontFamily-hikasami);
+  color: var(--text-white);
+}
+
+.retail-management-service-section .work-details .elem p {
+  font-size: var(--fs-sm);
+  font-family: var(--fontFamily-sans);
+  color: #e3e3e3;
+  line-height: 1.4;
+}
+
+.retail-management-service-section .work-details .elem-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (min-width: 630px) {
+  .retail-management-service-section-container {
+    padding-inline: var(--spacing-10);
+  }
+
+  .retail-management-service-section {
+    background-image: radial-gradient(
+      circle at 0% 0%,
+    rgba(26, 100, 147, 0.8) 0%,
+    rgba(20, 112, 169, 0.427) 0%,
+      transparent 30%
+    );
+  }
+
+  .retail-management-service-section-container .title {
+    font-size: var(--fs-6xl);
+  }
+
+  .retail-management-service-section-container .btn-wrapper {
+    flex-direction: row;
+  }
+
+  .retail-management-service-section .work-details .elem h3 {
+    font-size: var(--fs-3xl);
+  }
+}
+
+@media (min-width: 800px) {
+  .retail-management-service-section-container {
+    padding-inline: var(--spacing-13);
+    margin-block-start: var(--spacing-7);
+  }
+
+  .retail-management-service-section-container .title {
+    max-width: 370px;
+    font-size: var(--fs-7xl);
+  }
+
+  .retail-management-service-section-container .desc {
+    display: block;
+    font-size: var(--fs-md);
+    font-family: var(--fontFamily-sans);
+    color: #eceef0;
+    max-width: 600px;
+  }
+
+  .retail-management-service-section-container .btn-wrapper {
+    flex-direction: row;
+  }
+
+  .retail-management-service-section .work-details {
+    padding-inline: var(--spacing-15);
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+
+  .retail-management-service-section .work-details .elem:not(:last-child) {
+    border-right: 1px solid #fefefe41;
+  }
+}
+
+@media (min-width: 950px) {
+  .retail-management-service-section {
+    background-image: var(--hero-image);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    position: relative;
+    z-index: 10;
+  }
+
+  .retail-management-service-section-container {
+    position: relative;
+    padding-inline: var(--spacing-17);
+    z-index: 3;
+  }
+
+  .retail-management-service-section .title {
+    font-size: var(--fs-8xl);
+    max-width: 500px;
+    line-height: 1.1;
+  }
+
+  .retail-management-service-section .desc {
+    max-width: 450px;
+  }
+
+  .retail-management-service-section .bg-overlay {
+    position: absolute;
+    inset: 0;
+    width: 250px;
+    height: 250px;
+    border-radius: var(--radius-circle);
+    background-color: #1470a9;
+    filter: blur(100px);
+    pointer-events: none;
+    user-select: none;
+    z-index: -1;
+  }
+}

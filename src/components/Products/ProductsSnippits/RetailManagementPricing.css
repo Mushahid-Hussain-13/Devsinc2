@@ -1,0 +1,49 @@
+.retail-management-pricing {
+  position: relative;
+  padding: var(--spacing-7) var(--spacing-3);
+}
+
+.retail-management-pricing .container {
+  position: relative;
+  background-color: var(--bg-jet);
+  padding: var(--spacing-6);
+  border-radius: var(--radius-large);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: var(--spacing-4);
+  text-align: center;
+}
+
+.retail-management-pricing .container .section-heading { color: var(--text-white); }
+
+.retail-management-pricing .container .section-desc { color: #cfdade; }
+
+.retail-management-pricing .container .btn {
+  height: 50px;
+  background-color: var(--bg-teal);
+}
+
+
+
+
+@media (min-width: 545px) {
+  .retail-management-pricing .container {
+    padding: var(--spacing-8);
+  }
+}
+
+@media (min-width: 800px) {
+  .retail-management-pricing .container {
+    padding: var(--spacing-12);
+    gap: var(--spacing-4);
+  }
+}
+
+@media (min-width: 1050px) {
+  .retail-management-pricing .container {
+    padding: var(--spacing-16);
+  }
+}

@@ -1,0 +1,89 @@
+.retail-management-features {
+  position: relative;
+  padding: var(--spacing-8) var(--spacing-3);
+}
+
+.retail-management-features .container {
+  position: relative;
+  padding: var(--spacing-5);
+  background-color: var(--bg-light-gray);
+  border-radius: var(--radius-large);
+  overflow: hidden;
+}
+
+.retail-management-features .container .hero-header {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-2);
+}
+
+.retail-management-features .container .hero-header .section-heading {
+  max-width: 700px;
+}
+
+.retail-management-features .container .list {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: var(--spacing-5);
+  margin-block-start: var(--spacing-8);
+}
+
+.retail-management-features .container .list .item {
+  background-color: var(--bg-white);
+  padding: var(--spacing-6);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.02);
+  border-radius: var(--radius-large);
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-3);
+  min-height: 230px;
+}
+
+.retail-management-features .container .list .item .number {
+  font-size: var(--fs-sm);
+  font-weight: var(--fw-medium);
+  font-family: var(--fontFamily-mono);
+  line-height: 1.4;
+  color: #077a7a;
+}
+
+.retail-management-features .container .list .item .title {
+  font-size: var(--fs-lg);
+  font-weight: var(--fw-semibold);
+  font-family: var(--fontFamily-hikasami);
+  line-height: 1.45;
+  color: var(--text-black);
+}
+
+.retail-management-features .container .list .item .section-desc { font-size: var(--fs-sm); }
+
+
+
+
+
+@media (min-width: 545px) {
+  .retail-management-features .container {
+    padding: var(--spacing-7);
+  }
+}
+
+@media (min-width: 740px) {
+  .retail-management-features .container {
+    padding: var(--spacing-9);
+  }
+
+  .retail-management-features .container .list {
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--spacing-6);
+  }
+}
+
+@media (min-width: 1050px) {
+  .retail-management-features .container {
+    padding: var(--spacing-10) var(--spacing-16);
+  }
+
+  .retail-management-features .container .list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

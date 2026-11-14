@@ -36,6 +36,7 @@ import ShopifyApps from "./components/Products/ShopifyApps.jsx";
 import UnumPay from "./components/Products/UnumPay.jsx";
 import Voosha from "./components/Products/Voosha.jsx";
 import PulseNotify from "./components/Products/PulseNotify.jsx";
+import RetailManagementSystem from "./components/Products/RetailManagementSystem.jsx";
 
 
 const Home = () => {
@@ -108,6 +109,7 @@ const App = () => {
       <Route path="/unumpay" element={<UnumPay />}/>
       <Route path="/voosha" element={<Voosha />}/>
       <Route path="/pulse-notify" element={<PulseNotify />}/>
+      <Route path="/retail-management-system" element={<RetailManagementSystem />}/>
     </Routes>
   );
 };
