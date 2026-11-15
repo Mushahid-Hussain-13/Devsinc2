@@ -1,0 +1,174 @@
+.about-hero-section {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  background-color: var(--bg-jet);
+  color: var(--text-white);
+}
+
+.about-hero-section .about-container {
+  padding: var(--spacing-8) var(--spacing-6) var(--spacing-10);
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-3);
+}
+
+.about-hero-section .about-container .hero-header {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-3);
+}
+
+.about-hero-section .about-container .title {
+  color: var(--text-white);
+  font-size: var(--fs-3xl);
+  font-weight: var(--fw-semibold);
+  font-family: var(--fontFamily-hikasami);
+  line-height: 1.2;
+}
+
+.about-hero-section .about-container .section-desc { max-width: 900px; }
+
+.about-hero-section .about-container .section-tag,
+.about-hero-section .about-container .section-desc { color: #9fb3b8; }
+
+.about-hero-section .about-container .experience {
+  max-width: 600px;
+  padding: var(--spacing-6) var(--spacing-3);
+  margin-block: var(--spacing-5);
+  border-top: 1px solid #1f333a;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.about-hero-section .about-container .experience .elem {
+  position: relative;
+  padding: var(--spacing-3);
+}
+
+.about-hero-section .about-container .experience .elem h3 {
+  font-size: var(--fs-2xl);
+  font-weight: var(--fw-semibold);
+  font-family: var(--fontFamily-hikasami);
+  line-height: 1.3;
+}
+
+.about-hero-section .about-container .experience .elem p {
+  font-size: var(--fs-xs);
+  font-family: var(--fontFamily-sans);
+  color: #9fb3b8;
+  line-height: 1.4;
+  margin-block-start: 6px;
+}
+
+.about-hero-section .about-container .trusted-wrapper h3 {
+  font-size: var(--fs-sm);
+  font-weight: var(--fw-medium);
+  font-family: var(--fontFamily-mono);
+  text-transform: uppercase;
+  color: #9fb3b8;
+  margin-block-end: var(--spacing-4);
+}
+
+.about-hero-section .about-container .trusted-by {
+  max-width: 600px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+
+.about-hero-section .about-container .trusted-by .client {
+  width: auto;
+  height: 80px;
+  background-color: #142631;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--radius-large);
+}
+
+.about-hero-section .about-container .trusted-by .client:last-child { grid-column: span 2; }
+
+
+
+@media (min-width: 380px) {
+  .about-hero-section .about-container .trusted-by {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .about-hero-section .about-container .trusted-by .client:last-child {
+    grid-column: span 1;
+  }
+
+}
+
+
+@media (min-width: 450px) {
+  .about-hero-section .about-container .trusted-by {
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  }
+
+  .about-hero-section .about-container .title { font-size: var(--fs-4xl); }
+}
+
+
+@media (min-width: 545px) {
+
+  .about-hero-section .about-container .experience {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .about-hero-section .about-container .experience .elem:not(:first-child) {
+    border-left: 1px solid #2b434d;
+  }
+
+  .about-hero-section .about-container .experience .elem h3 {
+    font-size: var(--fs-4xl);
+  }
+
+  .about-hero-section .about-container .title { font-size: var(--fs-5xl); }
+}
+
+
+
+@media (min-width: 850px) {
+  .about-hero-section .about-container {
+    padding: var(--spacing-10) var(--spacing-10) var(--spacing-12); 
+  }
+
+  .about-hero-section {
+    background-image: linear-gradient(90deg, #021825 0%, rgba(2, 24, 37, 0.85) 35%, rgba(2, 24, 37, 0) 70%),
+  url('../../../assets/about-us-hero-bg.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .about-hero-section .about-container .trusted-by .client {
+    background-color: #333d453f;
+  }
+
+  .about-hero-section .about-container .title {
+    font-size: var(--fs-6xl);
+    max-width: 500px;
+  }
+
+  .about-hero-section .about-container .section-desc {
+    max-width: 600px;
+  }
+}
+
+
+@media (min-width: 1020px) {
+  .about-hero-section .about-container {
+    padding: var(--spacing-10) var(--spacing-16) var(--spacing-14); 
+  }
+
+  .about-hero-section .about-container .trusted-by .client {
+    background-color: #333d453f;
+  }
+
+  .about-hero-section .about-container .title {
+    font-size: var(--fs-8xl);
+  }
+}
