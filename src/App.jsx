@@ -37,6 +37,11 @@ import UnumPay from "./components/Products/UnumPay.jsx";
 import Voosha from "./components/Products/Voosha.jsx";
 import PulseNotify from "./components/Products/PulseNotify.jsx";
 import RetailManagementSystem from "./components/Products/RetailManagementSystem.jsx";
+import About from "./components/Company/About.jsx";
+import Careers from "./components/Company/Careers.jsx";
+import LifeAtDevsinc from "./components/Company/LifeAtDevsinc.jsx";
+import CampusAmbassador from "./components/Company/CampusAmbassador.jsx";
+import PartnerProgram from "./components/Company/PartnerProgram.jsx";
 
 
 const Home = () => {
@@ -110,6 +115,11 @@ const App = () => {
       <Route path="/voosha" element={<Voosha />}/>
       <Route path="/pulse-notify" element={<PulseNotify />}/>
       <Route path="/retail-management-system" element={<RetailManagementSystem />}/>
+      <Route path="/about" element={<About />}/>
+      <Route path="/careers" element={<Careers />}/>
+      <Route path="/life-at-devsinc" element={<LifeAtDevsinc />}/>
+      <Route path="/campus-ambassador" element={<CampusAmbassador />}/>
+      <Route path="/partner-program" element={<PartnerProgram />}/>
     </Routes>
   );
 };

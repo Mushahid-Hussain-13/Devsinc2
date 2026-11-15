@@ -318,7 +318,7 @@ const Navbar = () => {
 
               <ul className={`sub-list ${activeMenu === 'company' ? 'active' : ''}`}>
                 <li className="sub-link">
-                  <Link to="#">
+                  <Link to="/about">
                     About
                     <span className="arrow">
                       <ArrowUpRight size={15} />
@@ -326,7 +326,7 @@ const Navbar = () => {
                   </Link>
                 </li>
                 <li className="sub-link">
-                  <Link to="#">
+                  <Link to="/careers">
                     Careers
                     <span className="arrow">
                       <ArrowUpRight size={15} />
@@ -334,7 +334,7 @@ const Navbar = () => {
                   </Link>
                 </li>
                 <li className="sub-link">
-                  <Link to="#">
+                  <Link to="life-at-devsinc">
                     Life at Devsinc
                     <span className="arrow">
                       <ArrowUpRight size={15} />
@@ -342,7 +342,7 @@ const Navbar = () => {
                   </Link>
                 </li>
                 <li className="sub-link">
-                  <Link to="#">
+                  <Link to="/campus-ambassabor">
                     Campus Ambassabor
                     <span className="arrow">
                       <ArrowUpRight size={15} />
@@ -350,7 +350,7 @@ const Navbar = () => {
                   </Link>
                 </li>
                 <li className="sub-link">
-                  <Link to="#">
+                  <Link to="/partner-program">
                     Partner Program
                     <span className="arrow">
                       <ArrowUpRight size={15} />
