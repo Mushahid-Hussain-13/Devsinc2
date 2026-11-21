@@ -10,6 +10,8 @@ import blog1 from '../../assets/blog1.webp';
 import blog2 from '../../assets/blog2.webp';
 import blog3 from '../../assets/blog3.webp';
 import DevsincValues from "./CompanySnippits/DevsincValues.jsx";
+import CompanyStory from "./CompanySnippits/CompanyStory.jsx";
+import CompanyLeaderShip from "./CompanySnippits/CompanyLeaderShip.jsx";
 
 const About = () => {
   return (
@@ -17,6 +19,8 @@ const About = () => {
       <AboutHeroSection />
       <OurMission />
       <DevsincValues />
+      <CompanyStory />
+      <CompanyLeaderShip />
       <ClientReviews />
       <DigitalInsights
         subtitle={"Insights"}
