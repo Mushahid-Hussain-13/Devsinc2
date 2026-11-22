@@ -1,0 +1,76 @@
+.career-equity {
+  position: relative;
+  padding: var(--spacing-7) var(--spacing-4);
+}
+
+.career-equity .container {
+  position: relative;
+  padding: var(--spacing-6);
+  border-radius: var(--radius-large);
+  overflow: hidden;
+  background: linear-gradient(to top, #0A334C, #051A28);
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: var(--spacing-7);
+}
+
+.career-equity .container .content-left {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-2);
+}
+
+.career-equity .container .content-left .section-heading {
+  color: var(--text-white);
+  max-width: 500px;
+}
+
+.career-equity .container .content-left .section-desc { color: rgb(187, 200, 205); }
+
+.career-equity .container .content-right {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--spacing-3);
+}
+
+.career-equity .container .content-right .elem {
+  background-color: #163C53;
+  border: 1px solid #3e657e;
+  padding: var(--spacing-4);
+  border-radius: var(--radius-large);
+}
+
+.career-equity .container .content-right .elem h3 {
+  font-size: var(--fs-2xl);
+  font-weight: var(--fw-semibold);
+  font-family: var(--fontFamily-hikasami);
+  color: var(--text-teal);
+}
+
+.career-equity .container .content-right .elem p {
+  font-size: var(--fs-xs);
+  font-family: var(--fontFamily-sans);
+  color: #b2cad2;
+}
+
+
+
+@media (min-width: 545px) {
+  .career-equity .container {
+    padding: var(--spacing-8);
+    gap: var(--spacing-10);
+  }
+}
+
+@media (min-width: 740px) {
+  .career-equity .container {
+    padding: var(--spacing-12);
+  }
+}
+
+@media (min-width: 900px) {
+  .career-equity .container {
+    padding: var(--spacing-12) var(--spacing-16);
+    grid-template-columns: 1.5fr 1fr;
+  }
+}

@@ -1,0 +1,166 @@
+.career-hero-section {
+  position: relative;
+  width: 100%;
+  min-height: 80vh;
+  background-color: var(--bg-jet);
+  color: var(--text-white);
+}
+
+.career-hero-section .career-container {
+  padding: var(--spacing-8) var(--spacing-6);
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-3);
+}
+
+.career-hero-section .career-container .hero-header {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-3);
+}
+
+.career-hero-section .career-container .title {
+  color: var(--text-white);
+  font-size: var(--fs-3xl);
+  font-weight: var(--fw-semibold);
+  font-family: var(--fontFamily-hikasami);
+  line-height: 1.2;
+  max-width: 600px;
+}
+
+.career-hero-section .career-container .section-tag,
+.career-hero-section .career-container .section-desc {
+  color: #9fb3b8;
+}
+
+.career-hero-section .career-container .btn-wrapper {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-3);
+  flex-wrap: wrap;
+  margin-block-start: var(--spacing-5);
+}
+
+.career-hero-section .career-container .btn-wrapper .btn {
+  color: var(--text-black);
+  font-family: var(--fontFamily-hikasami);
+}
+
+.career-hero-section .career-container .btn-wrapper .btn:nth-child(2) {
+  background-color: transparent;
+  backdrop-filter: blur(10px);
+  color: var(--text-white);
+  border: 1px solid #dee9f5;
+}
+
+.career-hero-section .career-container .btn-wrapper .btn .icon {
+  line-height: 0;
+}
+
+.career-hero-section .career-container .btn-wrapper .btn:nth-child(2) .icon {
+  padding: var(--spacing-2);
+  background-color: var(--bg-white);
+  color: var(--text-black);
+  border-radius: var(--radius-circle);
+}
+
+.career-hero-section .career-container .btn-wrapper .btn:nth-child(2):hover {
+  background-color: #ffffff0f;
+}
+
+.career-hero-section .career-container .experience {
+  max-width: 600px;
+  padding: var(--spacing-6) var(--spacing-3);
+  margin-block: var(--spacing-5);
+  border-top: 1px solid #1f333a;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.career-hero-section .career-container .experience .elem {
+  padding: var(--spacing-2);
+}
+
+.career-hero-section .career-container .experience .elem .haah {
+  font-size: var(--fs-2xl);
+  font-weight: var(--fw-semibold);
+  font-family: var(--fontFamily-hikasami);
+}
+
+.career-hero-section .career-container .experience .elem .desc {
+  font-size: var(--fs-xs);
+  font-family: var(--fontFamily-sans);
+  color: #b0bfc8;
+}
+
+@media (min-width: 545px) {
+  .career-hero-section .career-container {
+    padding: var(--spacing-8);
+  }
+
+  .career-hero-section .career-container .title {
+    font-size: var(--fs-4xl);
+  }
+}
+
+@media (min-width: 740px) {
+  .career-hero-section .career-container {
+    padding: var(--spacing-8) var(--spacing-12);
+  }
+
+  .career-hero-section .career-container .title {
+    font-size: var(--fs-6xl);
+  }
+
+  .career-hero-section .career-container .experience {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-3);
+  }
+
+  .career-hero-section .career-container .experience .elem:not(:last-child) {
+    border-right: 1px solid #2c444d;
+  }
+
+  .career-hero-section .career-container .experience .elem {
+    padding: var(--spacing-2) var(--spacing-4);
+  }
+
+  .career-hero-section .career-container .experience .elem .haah {
+    font-size: var(--fs-3xl);
+  }
+}
+
+@media (min-width: 850px) {
+  .career-hero-section .career-container {
+    padding: var(--spacing-10) var(--spacing-14);
+  }
+
+  .career-hero-section {
+    background-image:
+      linear-gradient(
+        90deg,
+        #021825 0%,
+        rgba(2, 24, 37, 0.85) 35%,
+        rgba(2, 24, 37, 0) 70%
+      ),
+      url("../../../assets/career-hero-section.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+@media (min-width: 1050px) {
+  .career-hero-section .career-container {
+    padding: var(--spacing-10) var(--spacing-16);
+  }
+
+  .career-hero-section .career-container .experience .elem {
+    padding: var(--spacing-2) var(--spacing-6);
+  }
+
+  .career-hero-section .career-container .experience .elem .haah {
+    font-size: var(--fs-4xl);
+  }
+}

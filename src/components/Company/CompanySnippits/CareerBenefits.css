@@ -1,0 +1,87 @@
+.career-benefits {
+  position: relative;
+  padding: var(--spacing-7) var(--spacing-4);
+}
+
+.career-benefits .container {
+  position: relative;
+  padding: var(--spacing-6);
+  background-color: var(--bg-light-gray);
+  border-radius: var(--radius-large);
+  overflow: hidden;
+}
+
+.career-benefits .container .hero-header {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-2);
+}
+
+.career-benefits .container .list {
+  margin-block-start: var(--spacing-10);
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: var(--spacing-5);
+}
+
+.career-benefits .container .list .item {
+  background-color: var(--bg-white);
+  padding: var(--spacing-5);
+  border-radius: var(--radius-large);
+}
+
+.career-benefits .container .list .item .title {
+  font-size: var(--fs-lg);
+  font-weight: var(--fw-semibold);
+  font-family: var(--fontFamily-hikasami);
+  color: var(--text-black);
+  margin-block-end: var(--spacing-4);
+}
+
+.career-benefits .container .list .item .list-item {
+  font-size: var(--fs-sm);
+  font-family: var(--fontFamily-sans);
+  display: flex;
+  align-items: flex-start;
+  gap: var(--spacing-3);
+  padding-block: var(--spacing-2);
+  border-top: 1px solid #e2e2e2;
+}
+
+.career-benefits .container .list .item .list-item .icon { color: teal; }
+
+@media (min-width: 545px) {
+  .career-benefits .container {
+    padding: var(--spacing-8);
+  }
+}
+
+@media (min-width: 740px) {
+  .career-benefits .container {
+    padding: var(--spacing-10);
+  }
+
+  .career-benefits .container .list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 940px) {
+  .career-benefits .container {
+    padding: var(--spacing-12);
+  }
+
+  .career-benefits .container .list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 1020px) {
+  .career-benefits .container {
+    padding: var(--spacing-12) var(--spacing-16);
+  }
+
+  .career-benefits .container .list .item {
+    padding: var(--spacing-7);
+  }
+}

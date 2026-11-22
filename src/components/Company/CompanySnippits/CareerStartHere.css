@@ -1,0 +1,99 @@
+.career-start-here {
+  position: relative;
+  padding-block: var(--spacing-10);
+}
+
+.career-start-here .container {
+  padding-inline: var(--spacing-5);
+  position: relative;
+}
+
+.career-start-here .container .hero-header {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-2);
+}
+
+.career-start-here .container .list {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: var(--spacing-5);
+  margin-block-start: var(--spacing-7);
+}
+
+.career-start-here .container .list .item {
+  padding: var(--spacing-7);
+  background-color: var(--bg-white);
+  border: 1px solid #ebebeb;
+  border-radius: var(--radius-large);
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-3);
+  transition: transform 0.2s ease;
+}
+
+.career-start-here .container .list .item .number {
+  width: 40px;
+  height: 40px;
+  border: 1.5px solid rgb(1, 181, 181);
+  border-radius: var(--radius-circle);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: var(--fs-sm);
+  font-weight: var(--fw-semibold);
+  font-family: var(--fontFamily-mono);
+  color: #006868;
+}
+
+.career-start-here .container .list .item .title {
+  font-size: var(--fs-lg);
+  font-weight: var(--fw-semibold);
+  font-family: var(--fontFamily-hikasami);
+  color: var(--text-black);
+}
+
+.career-start-here .container .list .item .section-desc {
+  color: #333;
+}
+
+.career-start-here .container .list .item .tu-hero-hai {
+  font-size: var(--fs-sm);
+  font-weight: var(--fw-semibold);
+  font-family: var(--fontFamily-hikasami);
+  color: #006868;
+}
+
+.career-start-here .container .list .item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 30px 5px rgba(0, 0, 0, 0.1);
+}
+
+@media (min-width: 545px) {
+  .career-start-here .container {
+    padding-inline: var(--spacing-10);
+  }
+}
+
+@media (min-width: 740px) {
+  .career-start-here .container {
+    padding-inline: var(--spacing-13);
+  }
+
+  .career-start-here .container .list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 900px) {
+  .career-start-here .container .list {
+    grid-template-columns: repeat(3, 1fr);
+    margin-block-start: var(--spacing-10);
+  }
+}
+
+@media (min-width: 1020px) {
+  .career-start-here .container {
+    padding-inline: var(--spacing-15);
+  }
+}
