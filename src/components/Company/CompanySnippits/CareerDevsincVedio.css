@@ -1,0 +1,44 @@
+.career-devsinc-vedio {
+  position: relative;
+}
+
+.career-devsinc-vedio .container {
+  position: relative;
+  border-radius: var(--radius-large);
+  overflow: hidden;
+}
+
+.career-devsinc-vedio .container .image {
+  position: relative;
+  z-index: 10;
+  border-radius: var(--radius-large);
+  overflow: hidden;
+}
+
+.career-devsinc-vedio .container .image::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(rgba(3, 3, 3, 0.3), rgba(7, 7, 7, 0.4));
+  z-index: 1;
+}
+
+
+.career-devsinc-vedio .container .image .icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 75px;
+  height: 75px;
+  transform: translate(-50%, -50%);
+  border-radius: var(--radius-circle);
+  background-color: var(--bg-white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  z-index: 10;
+}

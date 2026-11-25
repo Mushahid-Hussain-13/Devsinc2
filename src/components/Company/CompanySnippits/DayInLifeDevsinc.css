@@ -1,0 +1,88 @@
+.day-in-life {
+  position: relative;
+  padding-block: var(--spacing-13);
+}
+
+.day-in-life .container {
+  padding-inline: var(--spacing-6);
+}
+
+.day-in-life .container .hero-header {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-2);
+}
+
+.day-in-life .container .list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: var(--spacing-5);
+  margin-block-start: var(--spacing-10);
+}
+
+.day-in-life .container .list .item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.day-in-life .container .list .item .timing {
+  width: 52px;
+  height: 52px;
+  border: 2px solid var(--bg-teal);
+  color: teal;
+  font-size: 1.05rem;
+  font-weight: var(--fw-semibold);
+  font-family: var(--fontFamily-mono);
+  border-radius: var(--radius-circle);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-block-end: var(--spacing-3);
+}
+
+.day-in-life .container .list .item .img-holder {
+  border-radius: var(--radius-large);
+  overflow: hidden;
+  position: relative;
+}
+
+.day-in-life .container .list .item .title {
+  font-size: var(--fs-sm);
+  font-weight: var(--fw-semibold);
+  font-family: var(--fontFamily-hikasami);
+  color: #111;
+  margin-block: var(--spacing-2);
+  line-height: 1.4;
+}
+
+.day-in-life .container .list .item .desc {
+  font-size: var(--fs-xs);
+  font-family: var(--fontFamily-sans);
+}
+
+
+@media (min-width: 545px) {
+  .day-in-life .container {
+    padding-inline: var(--spacing-8);
+  }
+}
+
+
+@media (min-width: 740px) {
+  .day-in-life .container {
+    padding-inline: var(--spacing-10);
+  }
+
+  .day-in-life .container .list {
+    grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+  }
+}
+
+
+@media (min-width: 1020px) {
+  .day-in-life .container {
+    padding-inline: var(--spacing-16);
+  }
+}

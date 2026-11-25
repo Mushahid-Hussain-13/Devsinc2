@@ -7,6 +7,8 @@ import CareerFuture from './CompanySnippits/CareerFuture.jsx';
 import CareerBenefits from './CompanySnippits/CareerBenefits.jsx';
 import Process from '../Process.jsx';
 import CareerEquity from './CompanySnippits/CareerEquity.jsx';
+import CareerPathWays from './CompanySnippits/CareerPathWays.jsx';
+import CareerDevsincVedio from './CompanySnippits/CareerDevsincVedio.jsx';
 
 const Careers = () => {
   return (
@@ -14,6 +16,8 @@ const Careers = () => {
       <CareersHeroSection />
       <CareerStartHere />
       <CareerFuture />
+      <CareerPathWays />
+      <CareerDevsincVedio />
       <CareerBenefits />
       <CareerEquity />
       <Process
